@@ -1,0 +1,400 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+@font-face { font-family: 'Biko Bold'; src: url('../font/path/Biko_Bold.otf');  src: url('../font/path/Biko_Bold.eot'); src: url('../font/Biko_Bold.eot?#iefix') format('embedded-opentype'), url('../font/Biko_Bold.woff') format('woff'), url('../font/Biko_Bold.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ @font-face {
+  font-family: 'Biko Bold';
+  src: url('../font/Biko_Bold.svg#Biko Bold') format('svg');
+ }
+}
+/* Reset */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'Nanum Gothic','돋움',Dotum,AppleGothic,sans-serif; font-size:12px}
+body{*word-break:break-all;-ms-word-break:break-all -webkit-font-smoothing;background:#FFF;}
+td,tr,th{font-size:9pt; font-family:'Nanum Gothic','돋움',Dotum,AppleGothic,sans-serif;}
+
+
+a{text-decoration:none; color:#555;}
+a:hover{color:#555}
+a:hover,a:active,a:focus{text-decoration:none; color:#555}
+
+
+/* IE7이하 버전 input style */
+#input_style_6_7 input{
+#margin:-1px 0;
+}
+.nodata{
+height: 500px;
+line-height: 500px;
+}
+img,fieldset{
+border:0;
+}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+label,button{cursor:pointer}
+button{margin:0;padding:0}
+html:first-child select{height:20px;padding-right:6px}
+legend{width:0;display:none;}
+.hide {display:none;}
+.mt30{margin-top:30px;}
+
+
+/* PNG 처리 for IE 6 */
+*html .png24 {_behavior:url("../css/iepngfix.htc")}
+
+
+
+/* 툴팁 (Tooltip) */
+#dhtmltooltip{
+color:#7e7e7e;
+position: absolute;
+border: 1px solid #acacac;
+padding:5px;
+visibility: hidden;
+z-index: 100;
+box-shadow:5px 5px 5px #888;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#888888',direction='135',strength='5');
+}
+.rsv_info td{font-size:8pt;}
+.rsv_info td.td_value{text-align:right;}
+/* 음영을 삭제하려면 바래 아래 라인을 삭제하면 된다. 아래 라인은 반드시 CSS 영역의 가장 마지막에 위치시키도록 한다.*/
+/* filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135); */
+
+/* Common */
+.basicFont {font-family:"돋움"; font-size:12px}
+.bold {font-weight:bold}
+.font8 {font:8px 'Nanum Gothic','돋움';}
+.font9 {font:9px 'Nanum Gothic','돋움';}
+.font10 {font:10px 'Nanum Gothic','돋움';}
+.font11 {font:11px 'Nanum Gothic','돋움';}
+.font12 {font:12px 'Nanum Gothic','굴림'; }
+.font13 {font:13px 'Nanum Gothic','돋움';}
+.font14 {font:14px 'Nanum Gothic','돋움'; font-weight: 900;}
+.font15 {font:15px 'Nanum Gothic','돋움';}
+.font16 {font:16px 'Nanum Gothic','돋움';}
+.red{color:#FF3808;}
+.blue{color:#1B63C2;}
+.blue2{color:#334b65;}
+.green{color:#2af625;}
+
+
+.select_st select{
+height:22px;
+border:1px solid #9d9d9d;
+}
+
+.select_st2 select{
+height:22px;
+border:1px solid #9d9d9d;
+width:120px;
+margin-right:5px;
+color:#737171;
+}
+
+
+.gnb { position: absolute; top: 65px; right:10px }
+.gnb ul { overflow: hidden;}
+.gnb ul li { display: inline-block; float: left; margin: 0 30px; }
+.gnb ul li:after {content: url("../img/gnb_bar.gif"); width: 2px; height: 29px; float: right; margin-right: -30px; margin-top: -24px;}
+.gnb ul li:last-child:after {content:none;}
+.gnb ul li a { display: block; font-size: 16px; font-weight: 700; color: #fff; }
+.gnb ul li a:hover { color:#9d9c9c; }
+.gnb ul li a.on{color:#05ba00;}
+.logo { position: absolute; top: 50px; left: 23px; color:#fff }
+.logo a { display: block;color:#fff }
+
+.util { position: absolute; top: 10px; right: 23px; height:35px;   }
+.util ul { overflow: hidden; }
+.util ul li { display: inline-block; float: left; margin: 0 15px; }
+.util ul li a { display: block; font-size: 14px; font-weight: 700; color:#AFC0DA;}
+.util ul li a.login_icon{
+background: url(/resources/img/login_icon.png) no-repeat;
+padding-left: 20px;
+}
+.util ul li:hover { opacity:0.7; filter: alpha(opacity=70); }
+
+
+.campaign .box { width: 344px; margin: 0 12px; box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25); border-radius: 5px; position: relative; background: #fff; height: 500px;}
+
+.btn_center{text-align:center;margin:20px auto}
+a.middle{padding:12px 35px;}
+a.big{padding:18px 55px;font-size:18px;}
+a.b_100{padding:10px 35px;font-size:14px;}
+.button_green{background:#82c05d; border-radius:5px;color:#fff; font-size:14px;}
+.button_green:hover{background: #419112;color:#fff; }
+.button_blue{background: #159ddb;color:#fff; border-radius:5px;color:#fff; font-size:14px;}
+.button_blue:hover{background: #106D98;color:#fff; }
+.button_orange{background: #e2a90e;color:#fff; border-radius:5px;color:#fff; font-size:14px;}
+.button_orange:hover{background: #ae820a;color:#fff; }
+.button_gray{background: #d7d7d7;color:#fff; border-radius:5px;color:#fff; font-size:14px;}
+.button_gray:hover{background: #b1b0b0;color:#fff; }
+.btn_right{text-align:right}
+
+.progress {
+height: 19px;
+overflow: hidden;
+background-color: #f6f6f6;
+background-repeat: repeat-x;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+-moz-border-radius:  3px;
+-webkit-border-radius: 3px;
+border-radius:  3px;
+behavior:url("../css/PIE.htc");
+}
+
+.progress .bar {
+float: left;
+width: 0;
+height: 100%;
+font-size: 12px;
+color: #ffffff;
+text-align: center;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-repeat: repeat-x;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: width 0.6s ease;
+-moz-transition: width 0.6s ease;
+-o-transition: width 0.6s ease;
+transition: width 0.6s ease;
+}
+.active .bar{
+-webkit-animation: progress 2s linear infinite;
+-moz-animation: progress 2s linear infinite;
+-ms-animation: progress 2s linear infinite;
+-o-animation: progress 2s linear infinite;
+animation: progress 2s linear infinite;
+}
+.progress-striped .bar{
+background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+-webkit-background-size: 40px 40px;
+-moz-background-size: 40px 40px;
+-o-background-size: 40px 40px;
+background-size: 40px 40px;
+}
+
+.louder {font-size: 18px;
+font-weight: bold;
+color: #fff;
+text-align: center;
+background:#1ab7d1 url(../../img/banner_bg.png) repeat-x;
+padding: 40px 0;}
+.louder img{
+margin-left: 2px
+}
+
+.rocation {font-size: 16px;
+font-weight:500;
+background:#1ab7d1;
+padding:0  20px;background:#f1f5f8; border-bottom:1px solid #ebedef}
+.rocation  li{display:inline-block; padding:0 15px;color:#919596}
+.rocation  li.on{color:#1ab7d1; font-weight:700; border-bottom:3px solid #1ab7d1;line-height:48px;}
+.rocation  li.on i{margin-left: 0 10px;}
+
+/*silderbanner*/
+.sp-slideshow {
+    position: relative;
+	margin: 10px auto 20px;
+	width:600px;
+	height: 460px;
+	border: 1px solid #fff;
+}
+
+.sp-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+		border: 1px solid #ddd;
+}
+
+.sp-parallax-bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.sp-slideshow input {
+    position: absolute;
+	bottom: 15px;
+	left: 50%;
+	width: 9px;
+	height: 9px;
+	z-index: 1001;
+	cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.sp-slideshow input + label {
+    position: absolute;
+    bottom: 15px;
+	left: 50%;
+    width: 6px;
+	height: 6px;
+	display: block;
+	z-index: 1000;
+	border: 3px solid #fff;
+	border: 3px solid rgba(255,255,255,0.9);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color linear 0.1s;
+    -moz-transition: background-color linear 0.1s;
+    -o-transition: background-color linear 0.1s;
+    -ms-transition: background-color linear 0.1s;
+    transition: background-color linear 0.1s;
+}
+.sp-slideshow input:checked + label {
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.sp-selector-1, .button-label-1 {
+    margin-left: -36px;
+}
+
+.sp-selector-2, .button-label-2 {
+    margin-left: -18px;
+}
+
+.sp-selector-4, .button-label-4 {
+    margin-left: 18px;
+}
+
+.sp-selector-5, .button-label-5 {
+    margin-left: 36px;
+}
+
+.sp-arrow {
+    position: absolute;
+	top: 50%;
+	width: 15px;
+	height: 38px;
+	margin-top: -19px;
+	display: none;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 1000;
+	background: transparent url(../../img/arrow.png) no-repeat;
+	-webkit-transition: opacity linear 0.3s;
+    -moz-transition: opacity linear 0.3s;
+    -o-transition: opacity linear 0.3s;
+    -ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;
+}
+.sp-arrow:hover{
+	opacity: 1;
+}
+.sp-arrow:active{
+	margin-top: -18px;
+}
+.sp-selector-1:checked ~ .sp-arrow.sp-a2,
+.sp-selector-2:checked ~ .sp-arrow.sp-a3,
+.sp-selector-3:checked ~ .sp-arrow.sp-a4,
+.sp-selector-4:checked ~ .sp-arrow.sp-a5 {
+    right: 15px;
+	display: block;
+	background-position: top right;
+}
+.sp-selector-2:checked ~ .sp-arrow.sp-a1,
+.sp-selector-3:checked ~ .sp-arrow.sp-a2,
+.sp-selector-4:checked ~ .sp-arrow.sp-a3,
+.sp-selector-5:checked ~ .sp-arrow.sp-a4 {
+    left: 15px;
+	display: block;
+	background-position: top left;
+}
+
+
+.sp-slider {
+    position: relative;
+	left: 0;
+    width: 500%;
+	height: 100%;
+	list-style: none;
+    margin: 0;
+	padding: 0;
+    -webkit-transition: left ease-in 0.8s;
+    -moz-transition: left ease-in 0.8s;
+    -o-transition: left ease-in 0.8s;
+    -ms-transition: left ease-in 0.8s;
+    transition: left ease-in 0.8s; 
+}
+
+.sp-slider > li {
+	color: #fff;
+	width: 20%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 0 60px;
+    float: left;
+	text-align: center;
+	opacity: 0.4;
+    -webkit-transition: opacity ease-in 0.4s 0.8s;
+    -moz-transition: opacity ease-in 0.4s 0.8s;
+    -o-transition: opacity ease-in 0.4s 0.8s;
+    -ms-transition: opacity ease-in 0.4s 0.8s;
+    transition: opacity ease-in 0.4s 0.8s; 
+}
+.sp-slider > li img{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	padding: 40px 0 50px 0;
+	max-height: 100%;
+	max-width: 100%;
+}
+input.sp-selector-1:checked ~ .sp-content .sp-slider {
+    left: 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-slider {
+    left: -100%;
+}
+
+input.sp-selector-3:checked ~ .sp-content .sp-slider {
+    left: -200%;
+}
+
+input.sp-selector-4:checked ~ .sp-content .sp-slider {
+    left: -300%;
+}
+
+input.sp-selector-5:checked ~ .sp-content .sp-slider {
+    left: -400%;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
+	opacity: 1;
+}
+

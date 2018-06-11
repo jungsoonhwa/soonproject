@@ -1,0 +1,54 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext"  > Home</a>
+	<h1>이용안내</h1>
+	 	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_04.html"  class="ui-btn-active ui-state-persist">가입안내</a></li>
+		<li><a href="school_05.html">요금안내</a></li>
+		<li><a href="school_10.html">앱설치방법</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">
+
+<div>	
+<p class="img_area"><img src="images/pay_01.jpg"  border="0" alt="가입안내"></p>
+</div>
+	<!-- /content -->
+
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+</div><!-- /page -->
+
+</body>
+</html>

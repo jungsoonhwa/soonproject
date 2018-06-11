@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/*****헤드영역*****/
+div#header{width:1000px;position:relative;}
+
+h1{padding-top:20px;}
+
+div#header #btn100{position:absolute;top:40px;left:240px;}
+div#header #btn100 li{float:left;padding-right:80px;}
+
+div#header .top{position:absolute;top:10px;right:0;}
+div#header .top li{float:left;padding-right:10px;}
+
+div#header #friend{position:absolute;top:30px;right:0;}
+div#header #friend li{float:left;padding-right:5px;}
+
+/****메인상품영역*****/
+
+div#top_main{width:1000px;height:350px;position:relative;}
+
+div#top_main .main_product{width:702px;position:absolute;top:10px;left:0;}
+div#top_main .main_product p{padding: 20px 0  0 0;}
+div#popup .img_rolling{position:absolute;top:25px;left:280px;}
+div#popup ol{padding: 30px 0  0 60px;}
+div#popup li{float:left;padding-right:5px;}
+
+
+/**세일화살표위치1***/
+.sale_big{position:absolute;bottom:-20px;right:-3px;}
+.png24{tmp:expression(setPng24(this))}
+
+
+div#top_main .today{position:absolute;top:30px;right:10px;width:260px;}
+div#top_main .today p{text-align:center;padding-bottom:5px;border-bottom:solid 3px #bc0b0b;}
+div#top_main .today ul{padding-top:10px;}
+
+div#top_main .today li{padding-top:15px; line-height:32px;}
+.number{padding:2px 10px 0 0; vertical-align:middle;}
+/***상품리스트****/
+
+div#left{width:702px;}
+div#left #hotel{padding:10px 0;position:relative;}
+div#left  h3{padding-bottom:5px;}
+div#left #hotel .box{width:690px;height:215px;padding:10px 5px;border:solid 1px #cecece;}
+div#left #hotel li{float:left;padding:5px 15px;border-right:dotted 1px #828282;}
+div#left #hotel .end{border:0;}
+
+div#left #hotel .product_big{width:142px;height:197px;}
+div#left #hotel .product_big li{border:0;padding:0; width:142px;}
+div#left #hotel .product_big img{padding-bottom:8px;}
+
+/**세일화살표위치2***/
+
+div#left #hotel .sale{position:absolute;top:30px;left:125px;}
+div#left #hotel .sale1{position:absolute;top:30px;left:295px;}
+div#left #hotel .sale2{position:absolute;top:30px;left:465px;}
+div#left #hotel .sale3{position:absolute;top:30px;left:645px;}
+
+/**호텔용품***/
+div#left #product{padding:10px 0;min-height:230px;}
+div#left #product .box2{padding:10px 5px;width:407px;height:215px;border:solid 1px #cecece;float:left;}
+div#left #product .box2 p{padding:5px 10px 5px 15px;border-right:dotted 1px #828282;width:154px;float:left;}
+
+div#left #product .list_small{width:200px; float:right;right:10px;padding:5px 5px;}
+div#left #product .list_small li{border-bottom:dotted 1px #cecece;padding:10px 0px; }
+
+div#left #product .product_small{width:200px;position:relative;}
+div#left #product .product_small li{border:0;padding:0;}
+div#left #product .product_small img{position:absolute;right:0;top:10px;}
+
+/**추천상품***/
+div#left #product .md{background:#f5f5f5;border-top:solid 1px #cecece;border-bottom:solid 1px #cecece;border-right:solid 1px #cecece;float:right;width:282px;height:235px;}
+div#left #product h4{padding:10px 0 5px 5px;border-bottom:solid 1px #cecece;}
+div#left #product .list_small2{padding:20px 10px; height:150px;}
+div#left #product .list_small2 li{border-right:dotted 1px #828282;float:left;padding-left:15px;}
+div#left #product .product_middle{width:115px;}
+div#left #product .product_middle li{border:0;padding:0; width:115px;}
+div#left #product .product_middle img{padding-bottom:3px;}
+
+/*******오른쪽영역*************/
+div#right{padding:5px  0 5px 5px;}
+
+div#right #up_down{height:267px;padding-bottom:10px;}
+div#right #up_down h3{padding-bottom:3px;}
+div#right #up_down ul{height:150px;}
+div#right #up_down li{line-height:30px;}
+div#right #up_down img{margin:5px auto;vertical-align:middle;}
+
+div#right #event{padding-top:5px; width:282px;}
+div#right #event li{float:left;}
+
+div#contents #divMenu{ left:1015px;top:10px; position:absolute;}
+div#contents #divMenu dl {min-height: 100px;}
+div#contents #divMenu dd{padding-bottom:5px;}
+.end {border: medium none;width:70px;background:none;}
+
+/***custmer*****/
+div#custmer .center{background:url('../img/bg_icon.gif') no-repeat left 2px;margin:10px 5px 10px 0;}
+div#custmer .center li{float:left;padding:15px 5px 18px 10px;}
+
+div#custmer h3{padding-bottom:3px;}
+div#custmer .story{  height:158px; background:url('../img/bg_story.gif') no-repeat  left 40px;}
+
+div#custmer .story_box{position:relative; width:340px;}
+div#custmer .story_box img{position:absolute; top:20px;left:10px;}
+div#custmer .story_box ul{position:absolute; top:25px;left:90px;}
+div#custmer .story_box li{width:270px;}
+
+div#custmer .story_box1{position:relative;}
+div#custmer .story_box1 img{position:absolute; top:90px;left:10px;}
+div#custmer .story_box1 ul{position:absolute; top:95px;left:90px;}
+div#custmer .story_box1 li{width:270px;}
+
+div#custmer .notice {position:relative;}
+div#custmer .notice h3{padding-bottom:8px;}
+div#custmer .notice li{line-height:28px; list-style-type:disk; border-bottom:dotted 1px #cecece;}
+div#custmer .notice span{position:absolute; right:3px;}
+
+
+
+
+/***footer*****/
+#footer .footer_menu{width:1000px;margin:0 auto;background:url('../img/bg_footermenu.gif') no-repeat left 15px;padding:20px 0;}
+#footer .footer_menu li{float:left;padding:0 10px 0 8px;background:url('../img/footer_bar.gif') no-repeat right 3px;}
+address{width:1000px;margin:0 auto;padding-left:10px;}

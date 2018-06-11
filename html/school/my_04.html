@@ -1,0 +1,111 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext"  > Home</a>
+	<h1>마이페이지</h1>
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="my_01.html"  >로그인/로그아웃</a></li>
+		<li><a href="my_02.html">회원가입</a></li>
+		<li><a href="my_04.html" class="ui-btn-active ui-state-persist" >개인정보수정</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+<div class="login_form">
+
+			<div >
+	        아이디:fff24566
+			</div>
+
+			<div data-role="fieldcontain">
+	         <label for="password">현재 비밀번호:</label>
+	         <input type="password" name="password" id="password" value=""  class="w70" />
+			 <p>비밀번호는 6~16자의 영문 대·소문자, 숫자, 특수문자를 
+혼합해서 사용 하실 수 있습니다</p>
+			</div>
+
+			<div data-role="fieldcontain">
+	         <label for="password">새로운 비밀번호:</label>
+	         <input type="password" name="password" id="password" value="" class="w70" />
+			</div>
+			
+
+			<div data-role="fieldcontain">
+	         <label for="name">이름:</label>
+	         <input type="text" name="name" id="name" value=""  class="w70" />
+			 </div>
+			
+<div data-role="fieldcontain">
+	         <label for="tel">연락처:</label>
+	         <input type="tel" name="tel" id="tel" value=""  class="w70" />
+			</div>
+
+		</div>
+        <!-- //TABLE Expert List End -->
+
+        <center class="buttom_area">
+			<a href="index.html" data-role="button" data-inline="true">취소</a>
+			<a href="my_01.html" data-role="button" data-inline="true" data-theme="a">확인</a>
+	</center>
+
+      </p></form>
+
+<script type="text/javascript">
+<!--
+	$( "#popupPanel" ).on({
+    popupbeforeposition: function() {
+        var h = $( window ).height();
+
+        $( "#popupPanel" ).css( "height", h );
+    }
+});
+//-->
+</script>
+
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+
+
+
+</div>
+
+	<!-- /content -->
+
+
+
+
+
+
+</div><!-- /page -->
+
+</body>
+</html>

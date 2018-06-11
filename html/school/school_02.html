@@ -1,0 +1,153 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	<script type="text/javascript">
+	
+		$( "#popupPanel" ).on({
+    popupbeforeposition: function() {
+        var h = $( window ).height();
+
+        $( "#popupPanel" ).css( "height", h );
+    }
+});
+
+$( document ).on( "pageinit", function() {
+    $( ".photopopup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".photopopup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+	
+	</script>
+</head>
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<h1>서비스소개</h1>
+		<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_01.html" >스쿨보안관이란?</a></li>
+		<li><a href="school_02.html" class="ui-btn-active ui-state-persist">주요기능</a></li>
+		<li><a href="school_03.html">이용예</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+<div data-role="content" >	
+		
+	<div class="box_01">
+		<h3>주요기능</h3>
+
+	<ul class="list_01">
+			<li><a href="#img01" data-rel="popup" data-transition="slide" data-position-to="window"><i class="icon-01"></i>현재 위치 및 이동경로 추적</a></li> 
+			<li><a href="#img02" data-rel="popup" data-transition="slide" data-position-to="window"><i class="icon-01"></i>안심지역 설정 , 등·하교 알림 서비스</a> </li> 
+			<li><a href="#img03" data-rel="popup" data-transition="slide" data-position-to="window"><i class="icon-01"></i>SOS 호출 서비스</a></li> 
+			<li><a href="#img04" data-rel="popup" data-transition="slide" data-position-to="window"><i class="icon-01"></i>유해 앱·웹 차단</a></li> 
+			<li><a href="#img05" data-rel="popup" data-transition="slide" data-position-to="window"><i class="icon-01"></i>스마트 폰 사용시간 관리</a></li> 
+		</ul> 
+
+
+	</div>
+
+
+
+	<p><a href="#gallery" data-rel="popup" data-role="button" data-transition="slide" data-position-to="window">주요기능보기</a></p>
+
+	<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+	</div>
+
+	
+
+</div><!-- /content -->
+
+	<div id="img01"  data-role="popup"class="ui-content">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+	<p><img src="images/user_01.jpg"/></p>
+</div>
+	<div id="img02"  data-role="popup"class="ui-content">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+	<p><img src="images/user_02.jpg"/></p>
+</div>
+	<div id="img03"  data-role="popup"class="ui-content">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+	<p><img src="images/user_03.jpg"/></p>
+</div>
+	<div id="img04"  data-role="popup"class="ui-content">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+	<p><img src="images/user_04.jpg"/></p>
+</div>
+	<div id="img05"  data-role="popup"class="ui-content">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+	<p><img src="images/user_05.jpg"/></p>
+</div>
+<!-- /img page -->
+
+
+<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+
+
+<div data-role="popup" id="gallery">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+<!-- /header -->
+	<div data-role="content">	
+	  <div class="container">
+		 <div id="slides">
+			<img src="images/user_01.jpg" />
+			<img src="images/user_02.jpg"/>
+			<img src="images/user_03.jpg" />
+			<img src="images/user_04.jpg" />
+			<img src="images/user_05.jpg" />
+			  <a href="#" class="slidesjs-previous slidesjs-navigation"><img src="img/service_step_arrow01.png" width="15" height="22" border="0" alt=""></a>
+			  <a href="#" class="slidesjs-next slidesjs-navigation"><img src="img/service_step_arrow02.png" width="15" height="22" border="0" alt=""></a>
+		</div>
+    </div>
+  </div>
+
+  <script src="js/jquery.slides.min.js"></script>
+
+  <script>
+$(function() {
+      $('#slides').slidesjs({
+        width: 300,
+        height: 440,
+        navigation: false
+      });
+	 
+    });
+  </script>
+</div><!-- /slides -->
+
+</div><!-- /page -->
+</body>
+</html>

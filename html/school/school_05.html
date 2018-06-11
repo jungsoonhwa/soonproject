@@ -1,0 +1,171 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext"  > Home</a>
+	<h1>이용안내</h1>
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_04.html" >가입안내</a></li>
+		<li><a href="school_05.html" class="ui-btn-active ui-state-persist">요금안내</a></li>
+		<li><a href="school_10.html" >앱설치방법</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+	
+
+<p class="img_area"><a href="school_08.html"><img src="images/img_04.png"  border="0" alt=""></a></p>
+
+
+<table cellspacing="0" border="0" id="board_type">
+          <colgroup>
+          <col width="15%">
+          <col width="25%">
+          <col width="">
+          <col width="25%">
+          <col width="25%">
+          </colgroup>
+          <thead>
+           <tr>
+           	 <th></th>
+              <th scope="col">개월</th>
+              <th scope="col">이용<br/>자녀수</th>
+              <th scope="col">서비스<br/> 이용요금</th>
+			    <th scope="col">할인률</th>
+            </tr>
+ 
+    <tr>
+	<td rowspan="6">유료<br/>월정액</td>
+    <td>1개월</td>
+    <td rowspan="6">1자녀</td>
+    <td>5,500원</td>
+   
+  </tr>
+ 
+  <tr>
+		<td>6개월(180일) </td>
+ 		<td>3,3000/31,350</td>
+ 		<td>5%</td>
+  </tr>
+ 
+  <tr>
+	 <td>1년(360일)</td>
+ 		<td>66,000/59,400</td>
+		<td>10%</td>
+  </tr>
+ 
+   <tr>
+		<td>2년(720일)</td>
+ 		<td>132,000/112,200</td>
+		<td>15%</td>
+  </tr>
+
+   <tr>
+		<td>3년(1080일) </td>
+ 		<td>198,000/158,400</td>
+		<td>20%</td>
+  </tr>
+
+</thead>
+</table>
+
+
+
+	<div class="box_02">
+		<h3>보호서비스</h3>
+		<ul>
+		<li>현장음청취	</li>
+		<li>긴급알림</li>
+		<li>성인 콘텐츠 차단	</li>
+		<li>유해어 문자 감지*</li>
+		<li>유해어 검색 감지*</li>
+		</ul>
+		</div>
+
+
+		<div class="box_02">
+		<h3>위치 서비스</h3>
+		<ul>
+		<li>자녀 실시간 위치 파악*</li>
+		<li>이동경로*</li>
+		<li>등하교 알림*</li>
+		<li>안심지역 설정*</li>
+		</ul>
+		</div>
+
+
+		<div class="box_02">
+		<h3>제한 서비스</h3>
+		<ul>
+		<li>심야시간 제한*	</li>
+		<li>사용시간 설정/제한*</li>
+		<li>웹 차단 설정*</li>
+		<li>앱 차단 설정*</li>
+		</ul>
+		</div>
+
+		<div class="box_02">
+		<h3>통계 서비스</h3>
+		<ul>
+		<li>앱 사용시간 통계</li>
+		<li>웹 접속 통계</li>
+		<li>스마트폰 사용시간 통계</li>
+		</ul>
+		</div>
+
+
+				<div class="box_02">
+		<h3>알림 서비스</h3>
+		<ul>
+		<li>USIM 갈취시 알림</li>
+		<li>안심지역 진입/이탈 알림*	</li>
+		<li>자녀폰 GPS및데이타 ON/OFF 알림*</li>
+		</ul>
+		</div>
+
+		<div class="box_02">
+		<h3>학교 서비스</h3>
+		<ul>
+		<li>핸드폰 수거 기능	</li>
+	<li>알림 기능(공지사항,가정통신문,알림장)</li>
+		</ul>
+		</div>
+<small>안내 : ' * '서비스는  유료로 이용가능합니다. 
+자세한 내용은  PC모드에서 확인가능합니다, </small>
+	</div>
+	<!-- /content -->
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+</div><!-- /page -->
+
+</body>
+</html>

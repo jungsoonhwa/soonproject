@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--[if IE 7]><html lang="en" class="no-js ie7 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ko" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>thinkfree drive</title>
+    <meta name="author" content="thinkfree">
+  
+    <link href="css/big.css" rel="stylesheet"/>
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+	
+
+			/*
+			 *  Open manually
+			 */
+
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open({
+					href : 'dialog1.html',
+					type : 'iframe',
+					padding : 0
+				});
+			});
+	$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'dialog2.html',
+					type : 'iframe',
+					padding : 0
+				});
+			});
+		$("#fancybox-manual-c").click(function() {
+				$.fancybox.open({
+					href : 'dialog1.html',
+					type : 'iframe',
+					padding : 0
+				});
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+			
+
+		}
+
+	
+</style>
+  </head>
+    <body >
+
+      <div id="wrapper">
+
+        <div class="global normal_header">
+            <div class="inner">
+                <h1><a href="/" class="logo-icon">thinkfree</a></h1>
+                <nav>
+                    <ul>
+                        
+                        <li><a href="#" >서비스소개</a></li>
+                        
+                        <li><a href="#" target="_blank">블로그</a></li>
+                        
+                        <li><a href="#">고객센터</a></li>
+                        
+                        <li><a id="fancybox-manual-a" href="javascript:;">로그인 <img src="images/arrow.png"  border="0" alt="화살표"> </a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+             <div class="feature-divider"></div>
+        </div>
+
+
+ <div class="home">
+<div class="contents">
+             <p>클라우드의 내자료공간</p>
+      
+            <div class="login_area">
+                <ul class="get-app">
+                    <li class="button sign"><a id="fancybox-manual-b" href="javascript:;">Sign Up</a></li>
+                    <li class="button login"><a id="fancybox-manual-c" href="javascript:;">login</a></li>
+                    <li><a href="" target="_blank"><img src="images/andro_btn.png" alt="Android app on Google Play"></a></li>
+                    <li><a href="" target="_blank"><img src="images/apple_btn.png" alt="Available on the App Store"></a></li>
+                </ul>
+      </div>
+</div>
+</div>
+
+<div class="detail">
+<div  class= "feature-search feature-search2 ">
+        <div class="inner">
+            <div class="copy">
+                <h2><img src="images/text_01.png"  border="0" alt="One Login."></h2>
+				<h3 class="subhead"><img src="images/text_s01.png"  border="0" alt="한번의 로그인만으로 내 서비스를 쉽게 이용"></h3>
+                <p class="description">
+                        <img src="images/text_des01.png" border="0" alt="원드라이브에 로그인으로 내가 사용하는 서비스의 컨텐츠를 
+어디에 저장되어 있든 상관없이 하나의 리스트로 볼 수 있습니다.">
+                    </p>
+            </div>
+           <img src="images/tab_img.png"  alt="메인이미지" class="feature-image">
+        </div>
+            </div>
+
+    <div class="feature-divider"></div>
+
+   <div  class="feature feature-wrapper">
+        <div class="inner">
+            
+                <div class="topper">
+				<h2><img src="images/text_02.png" border="0" alt="On the Cloud"></h2>
+				<h3 class="subhead"><img src="images/text_s02.png"  border="0" alt="다양한 작업을 클라우드에서 쉽게"></h3>
+                <p class="description">
+                        <img src="images/text_des02.png"  border="0" alt="이제 더 이상 파일을 다운로드 받을 필요 없이 사진, 문서, 자료 등의 다양한 작업을 한 화면에서 클라우드를 통해 바로 이용 할 수 있습니다. 이제 더 이상 파일을 다운로드 받을 필요 없이 사진, 문서">
+                    </p>
+                 <img src="images/notebook_img.png"  alt="메인이미지" class="feature-image">
+                    
+    			</div>
+            </div>
+        </div>  
+    
+    <div class="feature-divider"></div>
+<div  class="feature  feature-wrapper   feature-search  feature-search3 ">
+        <div class="inner">
+            <div class="copy">
+                <h2><img src="images/text_03.png"  border="0" alt="Easy Management"></h2>
+				<h3 class="subhead"><img src="images/text_s03.png"  border="0" alt="한번의 탭으로 문서를 쉽게 저장"></h3>
+                <p class="description">
+                        <img src="images/text_des03.png"  border="0" alt="다양한 기기에서 열어본 문서를 기존과 같이 번거롭게 저장 할 필요없이 사용자가 지정한 분류로 쉽게 저장하고 관리할 수 있습니다.">
+                    </p>
+            </div>
+            <img src="images/mobile_img.png"  alt="cardview이미지" class="feature-image">  
+        </div>
+    </div >
+</div>
+</div>
+       
+
+
+    
+<div id="footer">
+	<div id="footer_wrapper">
+		<div id="footer_content">
+			<div class="logo"><img src="images/footerlogo.png" alt="한글과컴퓨터"></div>
+			<div class="footer_menu">
+				<ul >
+					<li class="first" style="padding-left: 0px; background-image: none; background-position: initial initial; background-repeat: initial initial;"><a href="http://www.hancom.com" target="_blank">한글과 컴퓨터홈페이지</a></li>
+					<li><a href="http://shop.hancom.com" target="_blank">한컴샵</a></li>
+				</ul>
+				<div style="clear: both;"></div>
+				<p class="footer_address">경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 10층 l 대표전화 031) 627-7000<br/>
+고객상담센터 (평일 9시-18시) 1566-5199 | 기술지원센터 (평일 9시-18시) 1566-5192<br/>
+대표자: 이홍구 | 사업자등록번호 107-81-52230 | 통신판매신고번호 2012-경기성남-1092</p>
+				<p class="footer_copy">© Hancom Inc. All rights reserved.</p>
+			</div>			
+			
+		</div>
+	
+<div style="clear: both;"></div>
+</div> 
+</div>
+</body>
+</html>
+

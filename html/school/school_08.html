@@ -1,0 +1,210 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<h1>서비스결제</h1>
+		<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_08.html" class="ui-btn-active ui-state-persist">서비스신청</a></li>
+		<li><a href="school_09.html" >서비스현황</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+		<p class="t_1"></p>	
+
+
+<div id="contents">
+
+	  <form name="dataSet" id="dataSet">
+
+	   <input type="hidden" name="MEMBERID" id="MEMBER_ID" value="">
+	  </form>
+요금 정책- 자녀 한명당 한달가격입니다.
+			<table cellspacing="0" border="0" id="board_type"> 
+			<colgroup>
+				<col>
+				<col >  
+				<col >  
+				<col> 
+				<col >
+			</colgroup>
+
+			 <thead>
+				 <tr> 
+				 <th scope="col"> 월정액 </th>  
+				 <th scope="col">6개월 5%</th>  
+				 <th scope="col">1년10%</th>  
+				 <th scope="col">2년15%</th>  
+				 <th scope="col">3년 20%</th> 	
+				 </tr>
+			</thead>
+
+			 <tbody>
+				 <tr>
+				 <td>5,500</td>
+				 <td><strike>3,3000</strike>/31,350</td>
+				 <td><strike>66,000</strike>/59,400</td>
+				 <td><strike>132,000</strike>/112,200</td>
+				 <td><strike>198,000</strike>/158,400</td>
+				 </tr>
+			 </tbody>
+			</table> 
+ 
+
+<div id="childlist" name="childlist">
+	<form name="insertdata" id="insertdata">
+	<table cellspacing="0" border="0" id="board_type">
+		<colgroup> 
+			<col width="10%">
+			<col width="40%">  
+			<col width="50%"> 
+		</colgroup>
+	<thead>
+	<tr> 
+		<th colspan="3" scope="col" class="t3">1. 대상선택</th> 
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td>
+			<input type="hidden" name="childcode" id="childcode" value=""> 
+			<input type="hidden" name="paytype" id="paytype" value=""> 
+			<input type="checkbox" name="chaild" onclick="" class="required-checkbox"> 
+		</td>
+		<td><b>이름</b></td>
+		<td><b>설치모델</b></td>
+		</tr>
+		<tr>
+		<td> 
+			<input type="checkbox" name="chaild" onclick="" class="required-checkbox"> 
+			<input type="hidden" name="childcode" id="childcode" value="C6644">  
+			<input type="hidden" name="paytype" id="paytype" value="XX">
+		</td> 
+		<td>왕자님</td> 
+		<td>SHV-E250K</td>
+		</tr>
+		<tr>
+		<td> 
+			<input type="checkbox" name="chaild" onclick="" class="required-checkbox"> 
+			<input type="hidden" name="childcode" id="childcode" value="C6666">  
+			<input type="hidden" name="paytype" id="paytype" value="CM">
+		</td>
+		<td>공주님</td> 
+		<td>SHV-E330K</td>
+		</tr>
+	</tbody>
+	</table>
+	</form>
+</div>
+	  
+      
+<form name="payoption" id="payoption">	 
+
+<table id="board_type"> 
+
+<thead>
+		<tr> <th class="t3">2. 결제방법 선택  </th>  </tr>
+</thead>
+<tbody> 
+	<tr>
+		<td>
+			<input type="radio" id="chk_info2" name="chk_info" value="CH" onclick="">자동이체
+			<input type="radio" id="chk_info3" name="chk_info" value="CM" onclick="">휴대폰 결제
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<table id="board_type"> 
+
+<thead>
+	<tr> <th class="t3">3. 구매기간 선택</th>  </tr>
+</thead>
+<tbody> 
+<tr>
+<td> 
+	<span id="viewtype0" style="display:block">
+	&nbsp;
+	</span>
+		<span id="viewtype1" style="display:none"><input type="radio" id="period1" name="period" value="30" onclick="javascript:selectcheck('p')">월정액
+</span>
+<span id="viewtype2" >
+	<input type="radio" id="period6" name="period" value="30" onclick="javascript:selectcheck('p')">1개월(30일)&nbsp;&nbsp;
+	<input type="radio" id="period7" name="period" value="90" onclick="javascript:selectcheck('p')">3개월(90일)&nbsp;&nbsp;
+	<input type="radio" id="period2" name="period" value="180" onclick="javascript:selectcheck('p')">6개월(180일)&nbsp;&nbsp;
+	<input type="radio" id="period3" name="period" value="360" onclick="javascript:selectcheck('p')" checked="">1년(360일)&nbsp;&nbsp;
+	<input type="radio" id="period4" name="period" value="720" onclick="javascript:selectcheck('p')">2년(720일)&nbsp;&nbsp;
+	<input type="radio" id="period5" name="period" value="1080" onclick="javascript:selectcheck('p')">3년(1080일)
+</span>
+
+</td>
+</tr>
+</tbody>
+</table>
+ </form>
+		
+
+
+<table width="100%" height="50"> 
+
+
+<tbody><tr bgcolor="e7e7e7">
+<td align="center" id="bill">
+<h3>
+결제 대상이 없습니다 
+</h3>
+</td>
+</tr>
+
+</tbody></table>
+
+	<input type="hidden" name="cstype" id="cstype">
+	<form name="payrequestdata" id="payrequestdata">
+	   <input type="hidden" name="pMEMBERID" id="pMEMBERID" value="soon0411">
+	   <input type="hidden" name="pTradeid" id="pTradeid" value="20130931114721083-33">
+	   <input type="hidden" name="pPrdtprice" id="pPrdtprice" value="">
+	   <input type="hidden" name="MSTR" id="MSTR" value="">
+	   <input type="hidden" name="Prdtnm" id="Prdtnm" value="">
+		<input type="hidden" name="poption" id="poption" value="">
+		
+	 </form>
+	 <br>
+	<center>
+<a href="index.html" data-role="button" data-icon="check" data-theme="f" >결제하기</a>
+	</center>
+   
+      </div>
+	  <div><!-- /content -->
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+</div><!-- /page -->
+
+</body>
+</html>

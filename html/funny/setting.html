@@ -1,0 +1,166 @@
+<html lang="ko">
+ <head>
+  <title>funnybusut</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  
+
+
+ </head>
+ <body>
+  <!-----container----->
+  <div class="container">
+   <div class="top-header">
+    <div class="left_icon"><a href="#"><img src="images/icon_king.png" style="width:40px; height:40px;"></a></div>
+    <div class="logo">
+     <h1><a href="" >NOtice</a></h1>
+    </div>
+    <!---usernotifications---->
+    <div class="usernotifications"><a href="#"><i class="fa fa-times"></i></a></div>
+	<div class="clear"> </div>
+
+   </div>
+   
+   <!------ content ----->
+
+      <!--/list-box---->
+     <div class="content">
+	 <div class="more">
+    <div class="hgroup">
+        <h2>프로필변경</h2>
+    </div>
+	
+    <div class="user_info">
+		<p class="id"> ID : admin good</p>
+        <p class="pro_email"> 이메일 : admin@funnybusut.com</p>
+       
+    </div>
+	
+	<ul>
+	<li class="article hide">
+        <div class="q"><a href="#a3" class="trigger">닉네임변경</a></div>
+        <div class="a" style="height:auto;">
+		<form action="./" method="post">
+				
+				<div class="login-fields">
+				<div class="field">
+				<label for="nick">변경할 닉네임을 입력하세요</label>
+					<input type="text" id="nick" name="nick" value="" placeholder="nickname" class="login">
+				</div>
+				<div class="login-actions">정말 변경 하시겠습니까?
+				<button class="submit2 btn">변경</button><button class="btn-default btn ">취소</button></div>
+				<!-- /field -->
+			</div>
+		
+		</form>
+		</div>
+    </li>
+	<li class="article hide">
+        <div class="q"><a href="#a3" class="trigger">비밀번호 변경</a></div>
+        <div class="a"  style="height:auto;">
+		<form action="./" method="post">
+		
+				<div class="login-fields">
+				<div class="field">
+				<label for="password">현재 Password:</label>
+					<input type="password" id="password" name="password" value="" placeholder="Password" class="login">
+				</div> <!-- /field -->
+				<p class="forget_p"><a href="#">forget password?</a></p>
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" value="" placeholder="Password" class="login">
+				</div> <!-- /field -->
+				
+				<div class="field">
+					<label for="confirm_password">Confirm Password:</label>
+					<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="Confirm Password" class="login">
+				</div> <!-- /field -->
+				
+				 
+				
+				<div class="login-actions">
+				<button class="submit2 btn ">비밀번호 변경</button><button class="btn-default btn ">취소</button>
+				</div>
+			</div>
+		
+			</form>
+		</div>
+    </li>
+	<li class="article hide">
+        <div class="q"><a href="#a3" class="trigger">로그아웃</a></div>
+        <div class="a" style="height:auto;">정말로그아웃하시겠습니까?<button class="submit2 btn ">로그아웃</button><button class="btn-default btn ">취소</button></div>
+    </li>
+	<li class="article hide">
+        <div class="q"><a href="#a3" class="trigger">비활성</a></div>
+        <div class="a" style="height:auto;">
+		<form action="./" method="post">
+				
+				<div class="login-fields">
+				<div class="field">
+				<label for="password">비밀번호를 입력하세요</label>
+					<input type="password" id="password" name="password" value="" placeholder="Password" class="login">
+				</div>
+				<div class="login-actions">정말 비활성 하시겠습니까?
+				<button class="submit2 btn ">비활성</button><button class="btn-default btn ">취소</button></div>
+				<!-- /field -->
+			</div>
+		
+		</form>
+		</div>
+    </li>
+    </ul>
+</div>
+
+   </div>
+   <script type="text/javascript">
+jQuery(function(){
+	
+	var article = $('.more .article');
+	article.addClass('hide');
+	article.find('.a').slideUp(100);
+	
+	$('.more .article .trigger').click(function(){
+		var myArticle = $(this).parents('.article:first');
+		if(myArticle.hasClass('hide')){
+			article.addClass('hide').removeClass('show'); // 아코디언 효과를 원치 않으면 이 라인을 지우세요
+			article.find('.a').slideUp(100); // 아코디언 효과를 원치 않으면 이 라인을 지우세요
+			myArticle.removeClass('hide').addClass('show');
+			myArticle.find('.a').slideDown(100);
+		} else {
+			myArticle.removeClass('show').addClass('hide');
+			myArticle.find('.a').slideUp(100);
+		}
+	});
+	
+	$('.more .hgroup .trigger').click(function(){
+		var hidden = $('.more .article.hide').length;
+		if(hidden > 0){
+			article.removeClass('hide').addClass('show');
+			article.find('.a').slideDown(100);
+		} else {
+			article.removeClass('show').addClass('hide');
+			article.find('.a').slideUp(100);
+		}
+	});
+	
+});
+</script>
+   <!---- //content ----->
+  <footer >
+     <div > 
+	 <ul>
+                 <li class="f-left2"><a href="#" ><i class="fa fa-angle-left"></i></a></li>
+				 <li class="f-right2"><a href="#" ><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </div>   
+   </footer> 
+  </div>
+  <!---//container----->
+ </body>
+</html>
+
+ 

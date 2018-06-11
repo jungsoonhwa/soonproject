@@ -1,0 +1,189 @@
+<html lang="ko">
+ <head>
+  <title>funnybusut</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+		<script language="javascript"> 
+		function wrapWindowByMask(){
+		
+		var maskHeight = $(document).height();  
+		var maskWidth = $(window).width();  
+		$('.window').show();
+	}
+
+	$(document).ready(function(){
+		//검은 막 띄우기
+		$('.openMask').click(function(e){
+			e.preventDefault();
+			wrapWindowByMask();
+		});
+
+		//닫기 버튼을 눌렀을 때
+		$('.window .close').click(function (e) {  
+		    //링크 기본동작은 작동하지 않도록 한다.
+		    e.preventDefault();  
+		    $('#mask, .window').hide();  
+		});       
+		$('#mask').click(function () {  
+		    $(this).hide();  
+		    $('.window').hide();  
+		});      
+	});
+	</script> 
+
+ </head>
+ <body>
+  <!-----container----->
+    <div class="container">
+	   <div class="top-header">
+			<div class="left_icon2"><a href="#"><img src="images/icon_left.png" style="width:25px; height:20px;"></a></div>
+			<div class="logo"> <h1><a href="" >Stickers Collection</a></h1></div>
+			<!---usernotifications---->
+			<div class="usernotifications"><a href="#"><img src="images/icon_right.png" style="width:20px; height:20px;"></a></div>
+			<div class="clear"> </div>
+	   </div>
+  <!--//usernotifications---->
+  <div class="content">
+		 <div class="panle_box">
+		 <header>
+		 <h2>Stickers Collection</h2>
+		 <span class="del"><a href=""><i class="fa fa-times"></i></a></li> </span>
+		 </header>
+		 <section>
+		  <div class="qus">
+						<div class="preview">
+							<a href="">	<img src="images/people.png" title="name" /></a>
+						</div>
+						<div class="content">
+						“Gigihong”의 Sense ofHumor 에 대해 어떻게 생각하시나요?
+						</div>
+						
+				<div class="clear"></div>
+		
+		  </div>
+		<div class="sti_list">
+			 <ul>
+				<li><a href="#"><i class="fa fa-smile-o"></i> <span>26</span></a></li>
+				<li><a href="#"><i class="fa fa-smile-o"></i> <span>4,526</span></a></li>
+				<li><a href="#"><i class="fa fa-paw"></i><span>46</span></a></li>
+				<li><a href="#"><i class="fa fa-paw"></i><span>6</span></a></li>
+				<div class="clear"></div>	
+			</ul>					 
+		</div>
+		 </section>
+		 <!-- 스티커 선택--->
+         <section>
+	
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+					 <div class="window" style="top:-140px; left:0;width:100%;" >
+					 <div class="select_sti ">
+					 <p><i class="fa fa-smile-o"></i>
+					 </p>
+					 <button  href="#" class="close  btn p-btn2 ">  확인</button>
+					  <span class="del close"><a href=""><i class="fa fa-times"></i></a></li> </span>
+					 </div>
+					  </div>
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top">
+			           
+								  <button type="button"  class="ui-btn hover openMask"><i class="fa fa-smile-o"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-smile-o"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-smile-o"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-paw"></i></button>
+								  <button type="button" class="ui-btn hover"><i class="fa fa-cutlery"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-frown-o"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-graduation-cap"></i></button>
+								  <button type="button" class="ui-btn hover"><i class="fa fa-cutlery"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-frown-o"></i></button>
+								  <button type="button" class="ui-btn"><i class="fa fa-graduation-cap"></i></button>
+    				<div class="clear"> </div>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+								 <button type="button" class="ui-btn">ALL</button>
+								  <button type="button" class="ui-btn">#OOPS</button>
+								  <button type="button" class="ui-btn">#맑음</button>
+								   <button type="button" class="ui-btn">#행복</button>
+								   <button type="button" class="ui-btn hover">ALL</button>
+								  <button type="button" class="ui-btn">#OOPS</button>
+								  <button type="button" class="ui-btn">#GOOD1</button>
+								   <button type="button" class="ui-btn">#GOOD2</button>
+								   <button type="button" class="ui-btn hover">ALL</button>
+								  <button type="button" class="ui-btn">#OOPS</button>
+								  <button type="button" class="ui-btn">#GOOD1</button>
+								   <button type="button" class="ui-btn">#GOOD2</button>
+			          
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+									<button type="button" class="ui-btn ">푸하하하</button>
+								  <button type="button" class="ui-btn">#ㅋㅋ</button>
+								  <button type="button" class="ui-btn">#사랑</button>
+								   <button type="button" class="ui-btn">#GOOD</button>
+								   	<button type="button" class="ui-btn hover">푸하하하</button>
+								  <button type="button" class="ui-btn">#ㅋㅋ</button>
+								  <button type="button" class="ui-btn">#사랑</button>
+								   <button type="button" class="ui-btn">#GOOD</button>
+			          </div>
+			        </li>
+					 <li>
+			          <div class="slider-top">
+									<button type="button" class="ui-btn ">푸하하하</button>
+								  <button type="button" class="ui-btn">#ㅋㅋ</button>
+								  <button type="button" class="ui-btn">#사랑</button>
+								   <button type="button" class="ui-btn">#GOOD</button>
+								   	<button type="button" class="ui-btn hover">푸하하하</button>
+								  <button type="button" class="ui-btn">#ㅋㅋ</button>
+								  <button type="button" class="ui-btn">#사랑</button>
+								   <button type="button" class="ui-btn">#GOOD</button>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			<div class="clear"> </div>
+	  			<!--- banner Slider Ends Here ---> 
+
+		
+
+			<div class="scer_list">
+			 <ul>
+				<li><i class="fa fa-smile-o"></i></li>
+				<li><i class="fa fa-smile-o"></i></li>
+				<li><i class="fa fa-paw"></i></li>
+				<li><i class="fa fa-paw"></i></li>
+				<li><i class="fa fa-paw"></i></li>
+				<div class="clear"></div>	
+			</ul>					 
+		</div>
+		 </section>
+
+		<!-- //스티커 선택--->
+
+
+
+		 </div>
+   </div>
+   <!---- //content ----->
+ <!-- <footer >
+        <div >
+             <ul>
+                 <li class="f-left2"><a href="#" ><i class="fa fa-angle-left"></i></a></li>
+				 <li class="f-right2"><a href="#" ><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+   </footer> -->
+  </div>
+  <!---//container----->
+ </body>
+</html>
+
+ 

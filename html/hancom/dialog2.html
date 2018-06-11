@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta charset="utf-8">
+    <link href="css/big.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="https://thinkfreestage.zeropc.com/login/public/widgets/widget.core.jsp"></script>
+    <!-- Required import: login widget -->
+    <script type="text/javascript" src="https://thinkfreestage.zeropc.com/login/public/widgets/login_widget.js"></script>
+
+    <script>
+
+
+        $(document).ready(function() {
+            ZeroPCLogin.init();
+        });
+
+
+</script>
+ </head>
+
+ <body>
+ <div id="boxes">
+<!-- #customize your modal window here -->
+    <div id="dialog" class="window size">
+		
+
+
+          <div class="pop_title">
+        <h1><img src="images/pop_title01.png"  border="0" alt="sign up"></h1>
+        </div>
+        
+        
+        
+        <form action="/login" method="post">
+
+		<ul>
+		 <li id="zd_signup_widget_opt_btn_facebook"  class="button facebook">Facebook</li>
+		<li id="zd_signup_widget_opt_btn_twitter"  class="button twitte">twitter</li>
+		<li id="zd_signup_widget_opt_btn_google"  class=" button google">google</li>
+</ul>
+<div style="clear: both;"></div>
+
+          <div class="cell">
+		    <input class="form-text user" type="text" placeholder=" Email" name="username" autofocus="true" required="required" id="zd_signup_widget_username"  tabindex="1" />
+            <input class="form-text password" type="password"  id="zd_signup_widget_password" placeholder="Password" name="password" required="required" tabindex="2" />
+       		    </div>
+          <button id="zd_signup_widget_btn_signup" class="button primary2">signup</button>
+      
+       
+			<p> <a id="zd_login_widget_opt_btn_fp" href="javascript:void(0);">이용약관</a>    l     <a id="zd_login_widget_opt_btn_fp" href="javascript:void(0);"> 개인정보	 취급방침</a></p>
+        </form>
+
+        <div class="footer">
+          <a  href="dialog1.html">← 로그인 페이지로 가기</a>
+        </div>
+
+  </div>
+</div>
+ </body>
+</html>

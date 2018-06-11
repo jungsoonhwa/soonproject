@@ -1,0 +1,105 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext"  > Home</a>
+	<h1>마이페이지</h1>
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="my_01.html" >로그인/로그아웃</a></li>
+		<li><a href="my_02.html" class="ui-btn-active ui-state-persist">회원가입</a></li>
+		<li><a href="my_04.html" >개인정보수정</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+
+	<div data-role="content">	
+		<ul id="green_and_orange_step_menu">
+		<li class="frist ">약관동의</li>
+		<li>개인정보입력<span></span></li>
+		<li class="last">가입완료<span></span></li>
+		</ul>
+
+<div style="clear:both;"></div>
+
+
+<div>
+ <form action="" method="post">  
+
+  
+  <textarea name="textarea" id="textarea-a">
+
+약관내용이들어갑니다.약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+약관내용이들어갑니다.
+</textarea>
+<label><input type="checkbox" name="checkbox-0" />약관에 동의합니다 </label>
+</div>
+
+  <textarea name="textarea" id="textarea-a">
+약관내용
+</textarea>
+<label><input type="checkbox" name="checkbox-2" />약관에 동의합니다 </label>
+
+  <textarea name="textarea" id="textarea-a">
+약관내용
+</textarea>
+<label><input type="checkbox" name="checkbox-3" />약관에 동의합니다 </label>
+
+
+  </form>
+<center>
+	<a href="index.html" data-role="button" data-inline="true">취소</a>
+	<a href="my_02_1.html" data-role="button" data-inline="true" data-theme="b">다음단계</a>
+</center>
+
+</div>
+
+<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+
+<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+<a href="school_06.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+<a href=""  data-role="button" data-icon="delete" > 닫기</a>
+</div>
+
+<div><!-- /content -->
+</div><!-- /page -->
+
+
+
+
+
+<!-- Start of 3 page -->
+</body>
+</html>

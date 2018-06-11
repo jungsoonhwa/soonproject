@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(resetstyle.css);
+* {
+	font-family: "돋움",Dotum,"굴림",Gulim,"Lucida Grande",Tahoma,Verdana,AppleGothic,UnDotum,sans-serif;
+	font-size: 12px;
+	color:#555555;
+}
+body{ background:url(../images/top_bg.gif) repeat-x;
+
+   
+}
+body, form, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6 {margin: 0;padding: 0;}
+ul, ol, li {list-style: none;}
+
+a {text-decoration: none;color: #666;}
+
+a:hover {text-decoration: underline;color: blue;}
+
+img {border: 0;}
+
+legend {display: none;}
+
+fieldset {border: 0;}
+.hidden {display: none;}
+
+#wrap{ border-bottom:1px #dbdbdb solid; height:125px;}
+
+
+
+#header{width:960px;margin: auto;position:relative;}
+#content{width:960px;margin: auto; padding:10px 0;}
+#content .login { position:absolute;float:left;margin-left:450px; }
+#content .id{width:140px;float:right;}
+#content .id ul li{float: left;margin: 7px 5px 0;}
+#content .login .border{ border:1px #dddddd solid;	}
+
+input,label  {vertical-align: middle;padding-left:2px; }
+
+#middle{width:960px;}
+#middle .fla{padding-top:10px;width :960px;height:310px;}
+
+#notice_tag{clear: both;position:relative;background:url(../images/tag_bg.gif) no-repeat;padding-bottom:20px;height:119px;}
+
+#notice_tag .notice {	width:280px;padding:10px 5px 10px 20px;}
+#notice_tag .notice h3{padding:0 0 5px 0;margin-bottom:10px;border-bottom:1px #f5db72 solid ;}
+
+#notice_tag .notice li{	background:url(../images/news_list.gif) no-repeat 0;line-height: 16px;padding-left: 7px;margin-left: 10px;}
+#notice_tag .notice .more{position: absolute;top: 15px;left: 260px;}
+	
+#notice_tag .tag{position: absolute;width:640px;float:left;top:0;left:300px;padding:8px 5px 10px 20px;height: 116px;}
+#notice_tag .tag h3 {
+	padding-bottom:15px;
+}
+#notice_tag .tag ul li{
+	vertical-align:bottom;
+float: left;
+padding:5px 15px 3px 0;
+line-height: 19px;
+	
+		
+}
+.txt01{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.txt02{
+	color: #658e0c;
+	font-size: 18px;
+	font-weight: bold;
+}
+.txt03{
+	display:block;
+	padding-left:10px;
+	color: #fff;
+	font-size:18px;
+	font-weight:bold;
+	background:#006;
+	
+}
+.txt04{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+.txt05{
+	font-size: 11px;
+color:#909090;
+}
+.txt06{
+	font-size: 11px;
+color:#585858;
+}
+.txt07{
+	font-size: 11px;
+color:#112467;
+}
+
+.txt08{
+	font-size: 11px;
+color:#a9a9a9;
+}
+.txt09{
+	font-size: 11px;
+color:#2553a2;
+font-weight: bold;
+}
+
+
+#left {
+	clear:both;
+	position:relative;
+	float:left;
+	width: 300px;
+	height:0px;
+
+	
+				}
+				
+#left .bestblog{
+	width:300px;
+	height:130px;
+	background:url(../images/bestblog_bg.gif) no-repeat;
+}
+				
+#left .bestblog h3	{
+	margin-top:10px;
+	padding-bottom:10px;
+	
+}
+
+#left .bestblog dt{
+	overflow:visible;
+position:absolute;
+line-height:15px;
+
+	left:155px;
+}
+
+
+#left .bestblog dd{
+	position:absolute;
+	top:60px;
+	line-height:13px;
+	left:155px;
+	
+}
+
+
+#left .give{
+	height:40px;
+	border-bottom:1px #CCC solid ;
+	border-top:1px #CCC solid ;
+	margin-bottom:30px;
+}
+
+ 
+#left .give .day{
+	float:left;
+	padding:10px 10px 10px 5px;
+	margin-bottom:30px;
+}
+#left .give li{	
+padding-top:6px;
+}
+
+
+#left .more{
+	position: absolute;
+	top:20px;
+	left: 260px;}
+
+#left .newblog {
+	
+	clear:both;
+	position:relative;
+	padding-bottom:15px;
+}
+#left .newblog h3	{
+	
+	padding:10px 0 10px 0;
+	border-bottom: 2px #009 solid ;
+	
+}
+#left .newblog ul{
+	padding-top:10px;
+	
+}
+#left .newblog .more{
+	position: absolute;
+	top:20px;
+	left: 260px;}
+
+#left .newblog li{
+	background:url(../images/news_list2.gif) no-repeat 0;
+	line-height: 16px;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+#left .banner{
+	clear:both;
+	padding-top:27px;
+
+}
+#left .banner li{
+	float: left;
+	margin: 3px 0px 0;
+	padding-right:5px;
+
+}
+#right{
+	clear:both;
+	position:relative;
+	float:right;
+	width:630px;
+	padding-left:27px;
+}
+
+#right .tabmeun li{
+	float:left;
+	margin:7px 1px 0px 0;
+}
+
+
+#right .blog {
+	margin-top:17px;
+	position:absolute;
+	width:450px;
+	height:100px;
+	
+}
+#right .blog p img {
+
+	margin:0px 5px 0 0;
+	border:5px #CCC solid;
+}
+
+#right .blog ul{position:absolute;left:120px;top:0px;width:300px;}
+#right .blog ul li{ }
+#right .title{font-size:18px;font-weight:bold; padding-top:5px;}
+#right .day2 {position:absolute; float:left;padding-top:13px; width:330px;line-height:15px; }
+#right .day2 table td{float:left; padding:0 7px 0 8px; background: url(../images/list_bar.gif) no-repeat 0 80%;}
+#right .day2 .first-child {background:none;}
+#right .adderss{position:absolute;top:63px;	font-size: 11px;color:#a9a9a9;line-height:15px;padding:0 7px 0 8px;}
+#right .hi{position:absolute;top:78px;line-height:20px;;padding:0 7px 0 8px;}
+
+#right .kids{ clear:both; position:relative; float:right;width:180px;}
+#right .kids dl{ position:absolute;float:right;width:180px;top:17px; left:20px;}
+#right .kids dl dd{ padding:5px 0 2px 3px;}
+#right .kids p {}
+.boderimg{width:36px;margin:17px 0 5px 0;border:5px #e4b90e solid;}
+#right .kids .kids_name{padding-left:30px;}
+#right .kids .kids_text{line-height:9px;padding-left:30px;font-size: 11px;color:#a9a9a9;}
+#right .kids ul li img{ padding-bottom:3px;}
+
+#right .tab_viwe{clear:both; position:relative;width:620px; height:138px;border-bottom:1px #d8d8d8 solid; }
+
+
+#right .banner{clear:both;position:relative;width:630px;top:25px;}
+#right .banner li{float:left;margin_top: 7px ;padding-right:3px;}
+#right .banner2{clear:both;width:320px;float:right;}
+#right .banner2 li{float: left;margin_top: 7px ;padding-right:3px;}
+
+/* footer */
+#footerW {clear:both;position:relative;background:transparent url(../images/bg_bot.gif) repeat-x scroll 0 0;height:100px;text-align:center;width:100%;top:50px;}
+#footer {
+	clear:both; width:960px;height:80px; text-align:left; margin:0 auto; padding-left:10px; position:relative;
+
+	
+}
+#footer p{
+	float:left;
+margin:20px  30px 30px 0;
+}
+#footer ul.guide, #footer p.copyright, #footer address, #footer p.mail {float:right; width:700px;}
+#footer .copyright{
+	padding-top:10px;
+}

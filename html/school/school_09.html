@@ -1,0 +1,110 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<h1>서비스결제</h1>
+		<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_08.html">서비스신청</a></li>
+		<li><a href="school_09.html" class="ui-btn-active ui-state-persist">서비스현황</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+		<p class="t_1">서비스현황</p>	
+
+
+<div class="detail_list">
+
+<div id="contents">
+
+	  <form name="dataSet" id="dataSet">
+	   <input type="hidden" name="MEMBER_ID" id="MEMBER_ID" value="choiek">
+	  </form>
+
+	   <div id="childlist" >
+	   <table cellspacing="0" border="0" id="board_type">  
+	   <colgroup> 
+	   <col width="2%"> 
+	   <col width="13%">
+	   <col width="15%"> 
+	   <col width="">
+	   <col width="">
+	   <col width=""> 
+	   </colgroup>
+	   <thead>
+	   <tr> 
+	   <th scope="col">1</th> 
+	   <th scope="col">이름</th> 
+	   <th scope="col">전화번호</th>
+	   <th scope="col">서비스<br/> 시작일</th>
+	   <th scope="col"> 종료 <br/>예상일</th>   
+	   <th scope="col">서비스<br/> 상태 </th>  
+	   </tr>
+	   </thead> 
+	   <tbody>
+	   <tr>
+		   <td>1</td>
+		   <td>왕자님왕자님</td>  
+		   <td>01089234083</td>  
+		   <td>13.10. 26</td>  
+		   <td>13.10. 26</td> 
+		   <td>무료</td> 
+	   </tr>
+	   <tr>
+			<td>2</td>
+		   <td>공주님</td>  
+		   <td>01089234083</td>  
+		   <td>13.12. 26</td>  
+		   <td>13.10. 26</td> 
+		   <td>정액</td> 
+	   
+	   
+	   
+	   </tr>
+	   </tbody>
+	   </table
+	   ></div>
+	
+
+
+
+	   
+      </div>
+
+</div>
+
+	</div><!-- /content -->
+
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+</div><!-- /page -->
+
+</body>
+</html>

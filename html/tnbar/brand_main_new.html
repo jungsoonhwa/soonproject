@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="data-mps" content="DO1026">
+	<meta name="keywords" content="韩国品牌化妆品商城,韩国热卖化妆品大全">
+	<meta name="description" content="帮5买韩国品牌化妆品商城包含雪花秀,谜尚,兰芝等韩国热卖化妆品品牌，帮5买韩国城,一家韩国人开的化妆品商城网站">
+	
+	
+	<title>brandshop_toppage</title>
+	
+	
+	<link rel="icon" href="http://www.b5m.com/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.b5m.com/favicon.ico"	type="image/x-icon" />
+	<link rel="stylesheet" href="http://cdn01.b5mcdn.com/common/css/common_min.css">
+	<link rel="stylesheet" href="http://cdn01.b5mcdn.com/korea/css/index.css">
+	<link rel="stylesheet" href="css/brand.css">
+	<link rel="stylesheet" href="css/brand_new.css">
+	
+	
+	<link rel="stylesheet" href="js/owl.carousel/owl.carousel.css" />
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/jquery.slides2.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script_jquery.js"></script>
+	
+	
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.nav02>a').click(function() {
+				$('.cate_view_all').toggleClass('cate_view_all_open');
+			});
+			
+			$('.layout-list>div img').click(function() {
+				var openNewWindow = window.open("about:blank");
+				var locationTarget = $(this).parent().parent().find('a').attr('href');
+				openNewWindow.location.href = locationTarget;
+			});
+			
+		});
+	</script>
+</head>
+
+
+<body>
+
+	<!--test-->
+	<div id="topbar" class="topbar">
+		<div class="wraper">
+			<div class="align-right">
+				<div class="user-menu">
+					<a class="user-name" href="http://home.b5m.com"></a>
+					<div class="account-detail">
+						<div class="inner-box">
+							<div class="menu-action">
+								<a
+									href="http://ucenter.b5m.com/forward.htm?method=/user/account/info/index"
+									target="_blank">账户管理</a> <a
+									href="http://ucenter.b5m.com/user/user/logout.htm"
+									target="_self">退出</a>
+							</div>
+							<div class="account-info">
+								<a class="user-avatar" href="javascript:"> <i
+									class="icon-vip"></i> <img
+									src="http://static-web.b5m.com/ucenter/img/_sprite/icon_avatar_07.png?=_0.15583224448499755"
+									alt="我的头像" />
+								</a>
+								<div class="vip-dist">
+									<b></b>
+									<p>
+										<br />
+									</p>
+								</div>
+							</div>
+							<ul class="menu-link">
+								<li><a href="http://ucenter.b5m.com/trade/myorder.htm">我的订单</a>
+								</li>
+								<li><a href="http://ucenter.b5m.com/bps/index.htm">我的帮钻</a>
+								</li>
+								<li><a href="http://ucenter.b5m.com/nuser/fuli.htm">我的特权</a>
+								</li>
+								<li><a href="http://ucenter.b5m.com/favorites/index.htm">我的收藏</a>
+								</li>
+								<li><a href="http://ucenter.b5m.com/nuser/myexchange.htm">我的兑换</a>
+								</li>
+								<li><a href="http://ucenter.b5m.com/msg/index.htm">我的消息</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a data-type="1"
+					href="//ucenter.b5m.com/user/third/login/auth.htm?type=1&userMps=____"
+					class="login-icon icon-qq"></a> <a data-type="5"
+					href="//ucenter.b5m.com/user/third/login/auth.htm?type=5&userMps=____"
+					class="login-icon icon-weixin"></a> <a data-type="2"
+					href="//ucenter.b5m.com/user/third/login/auth.htm?type=2&userMps=____"
+					class="login-icon icon-weibo"></a> <a href="//ucenter.b5m.com/"
+					class="b5m-login">登录</a> <a
+					href="//ucenter.b5m.com/forward.htm?method=/user/info/register"
+					class="b5m-reg">注册</a>
+				<div class="b5m-msg">
+					<a class="descp" href="javascript:"><i class="fa"></i>消息</a>
+					<div class="msg-list">
+						<div class="inner-box">
+							<h3>
+								我的消息<em></em>
+							</h3>
+							<ul class="list-content">
+							</ul>
+							<ul class="hidden">
+								<li class="empty"><img
+									src="http://cdn01.b5mcdn.com/common/img/xb/a.png" alt="" /> <em>您还没有消息</em>
+									<!--[if lt IE 8]>
+								<p class="iecp">
+									<br />
+								</p>
+								<![endif]--></li>
+							</ul>
+							<a class="msg-center" href="http://ucenter.b5m.com/msg/index.htm">查看全部</a>
+						</div>
+					</div>
+				</div>
+				<a href="//ucenter.b5m.com/trade/myorder.htm" class="b5m-order">我的订单</a>
+				<a
+					href="//ucenter.b5m.com/forward.htm?method=/user/account/favorites/index"
+					class="b5m-favi">我的收藏</a> <a href="//order.b5m.com/dh/"
+					class="b5m-dh">帮钻兑换</a> <a href="//app.b5m.com" class="b5m-wap">手机版<span
+					class="b5m-app-code"></span></a> <a href="//t.b5m.com/" class="b5t">帮5淘</a>
+				<div class="b5m-feedback">
+					<a class="descp" href="javascript:">客户服务</a>
+					<div>
+						<ul>
+							<li><a href="javascript:" class="pop-consult">在线咨询</a></li>
+							<li><a href="//www.b5m.com/helpcenter/index?id=111"
+								target="_blank">帮助中心</a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="//cart.b5m.com/" class="b5m-cart">购物车<b>0</b></a>
+				<!--[if lt IE 8]>
+			<p class="iecp">
+				<br />
+			</p>
+<![endif]-->
+			</div>
+			<a class="b5m-slogan" href="http://www.b5m.com"><span
+				class="fa icon-home"></span>帮5买，享帮帮</a>
+			<!--[if lt IE 8]>
+		<p class="iecp">
+			<br />
+		</p>
+<![endif]-->
+		</div>
+	</div>
+
+	<div id="header" class="header">
+		<div class="wraper header-main">
+			<h1 class="b5m-logo">
+				<a href="index.html"> <img src="images/common/logo.jpg"
+					alt="logo" /></a>
+			</h1>
+			<div class="brand-search">
+				<form class="b5m-search" target="_blank" name="frm1" method="post">
+					<div class="search-content">
+						<input autocomplete="off" placeholder="领100元现金红包"
+							class="b5m-autofill " type="search" /> <a class="search-btn"
+							href="" target="_self"><i class="fa fa-search"></i></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="korea-nav">
+		<div class="korea-nav-content">
+			<ul class="nav">
+				<li class="item nav02"><a href="#" target="_blank"><i
+						class="fa fa-bars fa-2x"></i> 全体</a></li>
+			</ul>
+			<div></div>
+			<div class="services">
+				<i class="icon-sure" title="正品保证"></i>| <i class="icon-speed"
+					title="急速发货"></i>| <i class="icon-korea" title="韩国直供"></i>| <i
+					class="icon-pay" title="支付便捷"></i>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="content">
+		
+		<article class="introbest">
+			
+			<section class="layout-list main-new">
+				<h2><span>新</span>品到着</h2>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="New sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			<section class="layout-list main-best">
+				<h2><span>一</span>周至尊榜</h2>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>1</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>2</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>3</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>4</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>5</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>6</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>7</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li><span>￥999</span> <span>￥999</span></li>
+						</ul>
+					</div>
+					<label><span>8</span></label>
+				</div>
+			</section>
+			
+			
+			
+			
+			<section class="layout-list sub-default">
+				<h2><span>一</span>周至尊榜</h2>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+							<li>BEST</li>
+							<li>HOT</li>
+							<li>FREE</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+					<label><span>HOT</span></label>
+				</div>
+				<div>
+					<div>
+						<img src="images/main/main_new_sample.jpg" title="Best sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">维他命美白修护面膜 10片/盒</a></h3>
+						<ul>
+							<li>AMII极简2015夏新款宽松V领中长款裙子短袖..</li>
+							<li>50%</li>
+							<li><span>￥999</span> <span>￥999</span></li>
+							<li><span>170</span> <span>总销量</span></li>
+						</ul>
+					</div>
+					<div>
+						<div c;>
+							<span>찜하기</span>
+						</div>
+						<ul>
+							<li>NEW</li>
+						</ul>
+					</div>
+						<label><img src="images/common/icon_fast.png"/></label>
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+			<section class="layout-list main-review">
+				<h2><span>热</span>门平价</h2>
+				<div>
+					<div>
+						<img src="images/main/main_review_sample.jpg" title="Review sample image" />
+					</div>
+					<div>
+						<h3><a href="#" target="_blank">[Etude house] 秘策洗护 套装 洗发水护发素 200ml</a></h3>
+						<ul>
+							<li>
+								温和清洁头皮加强毛囊健康深层滋润头发	给予头发光泽，迷人持久香气。 <br />
+								含超浓缩毛囊细胞营养强化因子能坚固发	根让秀发不易脱落。 
+							</li>
+							<li>hto******</li>
+							<li><img src="images/main/main_review_sample_goods.jpg" title="Review sample image" />
+							<li>秘策洗护套装 洗 发水套装水水..</li>
+							<li><span>￥110</span> <span>￥100</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</article>
+	</div>
+
+
+	<div class="footer">
+		<div class="footer-links">
+			<a target="_blank" class="item" href="http://www.b5m.com/about">关于帮5买</a>
+			|<a target="_blank" class="item"
+				href="http://www.b5m.com/about/contact">联系我们</a> |<a target="_blank"
+				class="item" href="http://www.b5m.com/about/business">合作商家</a> |<a
+				target="_blank" class="item" href="http://www.b5m.com/about/links">友情链接</a>
+			|<a target="_blank" class="item" href="http://www.b5m.com/about/job">加入我们</a>
+			|<a target="_blank" class="item" href="http://app.b5m.com">移动应用</a> |<a
+				style="margin: 0 0 0 10px;" target="_blank" class="item"
+				href="http://www.b5m.com/zixunhot.html">热门</a> |<a target="_blank"
+				class="item" href="http://u.b5m.com">广告联盟</a> |<a target="_blank"
+				class="item" href="http://www.b5m.com/shiyongtiaokuan.html">使用条款</a>
+		</div>
+		<div class="footer-copyright">
+			Copyright &copy; 2011-2015 B5M.COM. All rights reserved. Powered by
+			B5Msoft Co.,Ltd.<br /> 增值电信业务经营许可证：沪B2-20130065号 |
+			中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034 沪卫(中医)网审【2015】10032号
+			沪ICP备11034776号-3 | 食品流通许可证：SP3101151410301755
+		</div>
+		<div id="footer-public" class="footer-public">
+			<a target="_blank"
+				href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120620142952978"><img
+				src="http://static-web.b5m.com/common/img/shgs.gif"
+				lazy-src="http://static-web.b5m.com/common/img/shgs.gif" alt="上海工商" /></a>
+			<a id="___szfw_logo___"
+				href="https://search.szfw.org/cert/l/CX20140423003765008027"
+				target="_blank"><img
+				src="http://static-web.b5m.com/common/img/cxwz.png"
+				lazy-src="http://static-web.b5m.com/common/img/cxwz.png" alt="诚信网站" /></a>
+			<a target="_blank"
+				href="http://www.315online.com.cn/member/315120051.html"><img
+				src="http://static-web.b5m.com/common/img/315.gif"
+				lazy-src="http://static-web.b5m.com/common/img/315.gif"
+				alt="网站交易保障中心安全网购门户" /></a> <a target="_blank"
+				href="https://ss.knet.cn/verifyseal.dll?sn=e14050531011548491ouit000000&ct=df&a=1&pa=0.40660188405314746"><img
+				src="http://static-web.b5m.com/common/img/cnnic.png"
+				lazy-src="http://static-web.b5m.com/common/img/cnnic.png"
+				alt="网站交易保障中心安全网购门户" /></a> <a
+				href="http://si.trustutn.org/info?sn=561150314012083330700"
+				target="_blank"><img
+				src="http://static-web.b5m.com/common/img/bottom_small_img.png"
+				lazy-src="http://static-web.b5m.com/common/img/bottom_small_img.png"
+				alt="实名认证" title="实名认证" /></a>
+		</div>
+	</div>
+
+
+	<script src="js/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+	<script>
+		$(function() {
+			$('.owl-carousel').owlCarousel({
+				loop : true,
+				autoplay : true,
+				autoplayTimeout : 5000,
+				autoplayHoverPause : true,
+				mouseDrag : false,
+				touchDrag : false,
+				nav : true,
+				dots : true,
+				margin : 0,
+				autoWidth : true,
+				items : 1
+			});
+
+		});
+		var glide = $('.slider').glide().data('api_glide');
+
+		$(window).on('keyup', function(key) {
+			if (key.keyCode === 13) {
+				glide.jump(3, console.log('Wooo!'));
+			}
+			;
+		});
+
+    $('.korea-nav-content').pulldown();    
+
+	</script>
+
+</body>
+</html>

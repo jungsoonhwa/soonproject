@@ -1,0 +1,83 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>스쿨보안관</title>  
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<h1>서비스소개</h1>
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="school_01.html" >스쿨보안관이란?</a></li>
+		<li><a href="school_02.html" >주요기능</a></li>
+		<li><a href="school_03.html" class="ui-btn-active ui-state-persist">이용예</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+	<div class="box_01">
+		<h3>사용예</h3>
+
+	<ul class="list_01">
+			<li><i class="icon-01"></i>자녀의 등·하교 알림 서비스로 안심할 수 있어요
+				<ul>
+				<li><span>(대상 예 : 초등 저학년 자녀) </span>집, 학교, 학원 등 자녀가 주로 생활하는 
+	지역을 안심지역으로 설정해 놓으니 자녀의 진입 및 이탈 상황을 알 
+	수 있어 안심이 됩니다.</li>
+				</ul>
+			</li> 
+			<li><i class="icon-01"></i>안심지역 설정 , 등·하교 알림 서비스 긴급상황 시 현재 위치가 파악되어 신속히 대처할 수 
+있어요
+			<ul>
+			<li><span>(대상 예 : 어르신)</span> 어르신께서 컨디션이 안 좋거나, 치매 증세로 
+불안하신 경우 SOS 호출이나 현재위치 파악이 되어 신속히 대처할 
+수 있습니다.</li>
+			</ul>
+		</li> 
+			<li><i class="icon-01"></i>스마트 폰 사용을 절제할 수 있어요.
+			<ul>
+			<li><span>(대상 예 : 청소년)</span> 시험 기간 및 수업시간, 심야 시간 등 특정시간에 
+스마트 폰 사용을 차단할 수 있어 학업에 집중할 수 있습니다. 
+또한 자녀가 이용한 앱 및 사용시간을 모니터링하여 스스로 통제할 
+수 있는 힘을 길러 줄 수 있습니다.</li>
+			</ul>
+			</li> 
+			<li><i class="icon-01"></i>유해한 정보로 부터 내 자녀를 보호할 수 있어요.
+			<ul>
+			<li><span>(대상 예 : 청소년) </span>유해한 앱·웹을 차단할 수 있어 유해한 환경으로
+부터 자녀를 보호할 수 있습니다.</li>
+			</ul></li> 
+		</ul> 
+
+
+	</div>
+	</div><!-- /content -->
+<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+</div><!-- /page -->
+
+</body>
+</html>

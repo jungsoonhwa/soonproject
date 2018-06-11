@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>kt 텔레캅 </title>
+<link rel="stylesheet" type="text/css" href="css/style.css"  />
+ </head>
+
+ <body>
+ <div id="wrab">
+	 <div id="header">
+	  <h1><a href="#"><img src="images/logo.jpg" alt="KT 텔레캅"  class="imgbtn"/></a></h1>
+	  <div class="login"><span>홍길동</span>님의 방문을 환영합니다
+			<a href="#">Logout </a>
+	  </div>
+		<div class="nav">
+		<div class="table">
+		<ul class="select"><li class="top_m active"><a href="#"><b>차량관리</b></a>
+		<div class="select_sub" >
+			<ul class="sub">
+				<li><a href="#">위치추적</a></li>
+				<li><a href="#">궤적조회</a></li>
+				<li><a href="#">업무정보조회</a></li>
+				<li><a href="#">경로검색</a></li>
+				<li><a href="#">출동궤적조회</a></li>
+				<li><a href="#">대기차량조회</a></li>
+			</ul>
+		</div>
+		</li>
+		</ul>
+
+		<ul class="select"><li class="top_m"><a href="#"><b>검색</b></a>
+		<div class="select_sub sub_loc2" >
+			<ul class="sub">
+				<li><a href="#">고객검색</a></li>
+				<li><a href="#">반경검색</a></li>
+				<li><a href="#">주소검색</a></li>
+				<li><a href="#">명칭검색</a></li>
+				<li><a href="#">가맹검색</a></li>
+			</ul>
+		</div>
+		</li>
+		</ul>
+
+
+
+		<ul class="select"><li class="top_m"><a href="#"><b>신호연동</b></a>
+		</li>
+		</ul>
+
+
+		<ul class="select"><li class="top_m"><a href="#"><b>SOS연동</b></a>
+		<div class="select_sub sub_loc3"  >
+			<ul class=" sub">
+				<li><a href="#">SOS 연동</a></li>
+				<li><a href="#">SOS 출동결과</a></li>
+				<li><a href="#">주변유관기간</a></li>
+			</ul>
+		</div>
+		</li>
+		</ul>
+
+		<ul class="select"><li class="top_m"><a href="#"><b>분포도 조회</b></a>
+		</li>
+		</ul>
+
+			<ul class="select"><li class="top_m"><a href="#"><b>개인별설정</b></a>
+		</li>
+		</ul>
+
+		<ul class="select"><li class="top_m"><a href="#"><b>관리자메뉴</b></a>
+		<div class="select_sub sub_loc3"  >
+			<ul class="sub">
+				<li><a href="#">부서위치정보관리</a></li>
+				<li><a href="#">시설물위치정보관리</a></li>
+				<li><a href="#">시스템환경설정</a></li>
+				<li><a href="#">심볼관리</a></li>
+			</ul>
+		</div>
+		</li>
+		</ul>
+
+	 </div>
+		</div>
+	 </div>
+	 <div id="contents">
+	 	<h2><img src="images/m_title_04.gif" alt="경로검색"/></h2>
+
+		<div id="leftMenuDivLayout" >
+
+
+		<div class="title_03">
+		<h3><img src="images/title04_01.gif" alt="경로검색"/></h3>
+		
+		<div class="text_box2">
+
+		<div id="search">
+					<form name="search_form" method="post" action="">
+					<fieldset>
+					<legend class="skip">출발지</legend>
+					<p><label for="search_txt">▶출발지</label>
+						<span class="text_02">전라남도 여수시 광림동</span>
+					</p>
+						<span  class="text_03" style="padding-left:50px;"><img src="images/web_icon01.png" alt="아이콘" class="img_icon3"  />다시설정하기</span>
+					</fieldset>
+					</form>
+				</div>
+
+		<div id="search">
+					<form name="search_form" method="post" action="">
+					<fieldset>
+					<legend class="skip"> 목적지</legend>
+					<p><label for="search_txt">▶목적지</label>
+						<span class="text_02">전라남도 여수시 둔덕동</span>
+					</p>
+						<span  class="text_03" style="padding-left:50px;"><img src="images/web_icon01.png" alt="아이콘" class="img_icon3"  />다시설정하기</span>
+					</fieldset>
+					</form>
+				</div>
+		</div>
+		
+
+			<div class="bottom_are22" >
+							<ul >
+							<li><a href="#"><img src="images/list_btn05.png" alt="경유지설정"/></a></li>
+							<li><a href="#"><img src="images/list_btn06.png" alt="가는길찾기"/></a></li>
+							<li><a href="#"><img src="images/list_btn07.png" alt="오는길찾기"/></a></li>
+							</ul>
+			</div>
+		</div>
+
+		<div class="title_03">
+		<h3 ><img src="images/title04_02.gif" alt="검색결과"/></h3>
+
+		<div  id="bbs">
+			<div id="tabmenu">
+			 <ul>
+			  <li class="on"> <a onClick="show_leemocon(0);">최적경로</a> </li>
+			  <li class=""> <a onClick="show_leemocon(1);">최단경로</a> </li>
+			 </ul>
+			</div>
+    <div id="tabcontent0" style="display:">
+					<ul id="news">
+									<li> 총거리 <span>5.998km</span></li>
+									<li>예상소요시간 <span class="text_05">15분</span></li>
+					</ul>
+    </div>
+    <div id="tabcontent1" style="display:none;">
+			 <ul id="notice">
+									<li> 총거리 <span>8km</span></li>
+									<li>예상소요시간 <span class="text_05">20분</span></li>
+				</ul>	
+    </div>
+
+
+<script language="javascript">
+function show_leemocon(tabnum){
+ var i;
+ var d = new Array(2);
+ var tm = document.getElementById("tabmenu").getElementsByTagName("li");
+ for(i=0; i<=1; i++){
+  
+  d[i] = document.getElementById("tabcontent"+i);
+  d[i].style.display = "none";
+  tm[i].className = "";
+ };
+ 
+  
+  switch(tabnum){
+   case 0:
+    d[0].style.display = "";
+ tm[0].className = "on";
+    break;
+   case 1:
+    d[1].style.display = "";
+ tm[1].className = "on";
+    break;
+
+
+  };
+};
+</script>
+
+</div>
+
+
+
+
+		 <h4><b>경로안내</b></h4>
+		<div class="top_line" style="oveflow-y:auto; overflow-x:hidden; ">
+				<ul >
+				<li class=" bg_line"><img src="images/icon_up.png" alt="직진" /> 
+				<img src="images/num01.gif" alt="1" /> 출발지 → <img src="images/num02.gif" alt="2" />둔덕 삼거리</li>
+				<li  class="text_06"> 미평로  |   3.6km </li>
+
+				<li class=" bg_line" ><img src="images/icon_right.png" alt="오른쪽" /> 
+				<img src="images/num02.gif" alt="2" /> 둔덕 삼거리 → <img src="images/num03.gif" alt="3" />둔덕 삼거리(74m)</li>
+				<li  class="text_06"> 상암로  |   74m </li>
+
+				<li class=" bg_line" ><img src="images/icon_left.png" alt="오른쪽" /> 
+				<img src="images/num03.gif" alt="3" /> 둔덕 삼거리 → <img src="images/num04.gif" alt="4" />둔덕 삼거리(74m)</li>
+				<li class="text_06"> 274m </li>
+
+				<li class=" bg_line" ><img src="images/icon_left.png" alt="오른쪽" /> 
+				<img src="images/num04.gif" alt="4" /> 둔덕 삼거리 → <img src="images/num05.gif" alt="5" />둔덕 삼거리(34m)</li>
+				<li class="text_06"> 112m </li>
+
+					<li class=" bg_line" ><img src="images/icon_left.png" alt="오른쪽" /> 
+				<img src="images/num05.gif" alt="5" /> 둔덕 삼거리 → <img src="images/num06.gif" alt="6" />둔덕 삼거리(34m)</li>
+				<li class="text_06"> 112m </li>
+				<li class=" bg_line" ><img src="images/icon_left.png" alt="오른쪽" /> 
+				<img src="images/num06.gif" alt="6" /> 둔덕 삼거리 → <img src="images/num07.gif" alt="7" />둔덕 삼거리(34m)</li>
+				<li class="text_06"  style="border-bottom:1px solid #e2e2e2;"> 112m </li>
+				</ul>
+					
+		</div>
+  	<div class="paging2" >
+											<span><a href="#"><img src="images/back_01.gif" alt="처음으로 "/></a></span>
+											<span><a href="#"><img src="images/back_02.gif" alt="바로전 "/></a></span>
+											<a  href="#"  class=“active”>1</a>
+											<a  href="#"  title=“Go to page 2″>2</a>
+											<a  href="#"  title=“Go to page 3″>3</a>
+											<a  href="#"  title=“Go to page 4″>4</a>
+											<a  href="#"  title=“Go to page 5″>5</a>
+											<span><a href="#"><img src="images/next_02.gif" alt="다음 "/></a></span>
+											<span><a href="#"><img src="images/next_01.gif" alt="마지막으로 "/></a></span>
+						</div>
+		</div>
+  <div class="bottom_are2"  >
+					
+					<ul  style="padding-bottom:10px;">
+							<li><a href="#"><img src="images/list_btn09.png" alt="모이주행"/></a></li>
+							<li ><a href="#"><img src="images/list_btn14.png" alt="주행중지"/></a></li>
+							<li><input type="checkbox" name="">  화면이동</li>
+					</ul>
+	  </div>
+	  </div>
+</div>
+<!--//left end-->
+<!--right start-->
+		<div id="rightMenu" z-index="1">
+				<ul>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_01.gif" alt="sos연동"  name="image11" OnMouseOut="image11.src='images/icon_01.gif' ;" OnMouseOver="image11.src='images/icon_01_ov.gif' ;"> </a></li>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_02.gif" alt="sos출동결과"  name="image12" OnMouseOut="image12.src='images/icon_02.gif' ;" OnMouseOver="image12.src='images/icon_02_ov.gif' ;"> </a></li>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_03.gif" alt="주변유관기관"  name="image13" OnMouseOut="image13.src='images/icon_03.gif' ;" OnMouseOver="image13.src='images/icon_03_ov.gif' ;"> </a></li>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_04.gif" alt="sos연동"  name="image14" OnMouseOut="image14.src='images/icon_04.gif' ;" OnMouseOver="image14.src='images/icon_04_ov.gif' ;"> </a></li>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_05.gif" alt="sos출동결과"  name="image15" OnMouseOut="image15.src='images/icon_05.gif ';" OnMouseOver="image15.src='images/icon_05_ov.gif' ;"> </a></li>
+				<li><a href='#' onfocus='blur()'> 
+				<img src="images/icon_06.gif" alt="주변유관기관"  name="image16" OnMouseOut="image16.src='images/icon_06.gif' ;" OnMouseOver="image16.src='images/icon_06_ov.gif' ;"> </a></li>
+				</ul>
+			</div>
+				<div id="rightarea" ></div>
+	 	</div>
+</div>
+  
+ </body>
+</html>

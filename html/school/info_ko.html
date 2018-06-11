@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>welcome</title>
+  <meta name="description" content="SlidesJS.">
+  <meta name="author" content="Nathan Searles">
+
+  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+
+  <!-- CSS for slidesjs.com example -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- End CSS for slidesjs.com example -->
+
+</head>
+<body>
+  <div class="container">
+    <div id="slides">
+
+   <div class="img01">
+   <h2><img src="IMG/ko_t_01.png"  border="0" alt="01. 나의 서비스를 한곳에서 쉽게 관리!"></h2>
+   <p><img src="IMG/ko_t_s01.png" border="0" alt="내가 사용하고 있는 다양한 클라우드 서비스를 클라우드 연결하기를 통해 간단히 추가 할 수 있습니다">.</p>
+   </div>
+
+   <div class="img02">
+   <h2><img src="IMG/ko_t_02.png" border="0" alt="02. 연결된 모든 서비스를 하나의 화면에서!"></h2>
+   <p><img src="IMG/ko_t_s02.png"  border="0" alt="구글 드라이브의 문서, 인스타그램의 사진, 에버노트의 노트까지 다양한 형태의
+내 자료를 하나의 화면에서 편리하게 볼 수 있습니다">.</p>
+   </div>
+
+      <div class="img03">
+   <h2><img src="IMG/ko_t_03.png"  border="0" alt="03. 내가 정한 주제로 간편하게 묶는 방법!"></h2>
+   <p><img src="IMG/ko_t_s03.png"  border="0" alt="연결된 클라우드 서비스의 다양한 형식의 내 자료를 버튼 하나로 쉽게 묶을 수 있습니다."></p>
+   </div>
+
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><img src="IMG/service_step_arrow01.png" width="29" height="44" border="0" alt=""></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><img src="IMG/service_step_arrow02.png" width="29" height="44" border="0" alt=""></a>
+
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+$(function() {
+      $('#slides').slidesjs({
+        width: 800,
+        height: 500,
+        navigation: false
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+</body>
+</html>

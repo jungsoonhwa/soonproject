@@ -1,0 +1,104 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Page Title</title> 
+	  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/jqm-docs.css" />
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header"  data-theme="f">
+	<a href="main.html" data-icon="home" data-iconpos="notext"  > Home</a>
+	<h1>마이페이지</h1>
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window"  data-icon="grid" data-iconpos="notext">Open panel</a>
+	</div><!-- /header -->
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="my_01.html"  >로그인/로그아웃</a></li>
+		<li><a href="my_02.html">회원가입</a></li>
+		<li><a href="my_03.html" class="ui-btn-active ui-state-persist" >개인정보수정</a></li>
+	</ul>
+</div><!-- /navbar -->
+
+
+	<div data-role="content">	
+<p class="t_2"><span>아이디찾기</span></p>	
+<form action="" method="post"  class="form_login">
+	<div data-role="fieldcontain">
+		<label  for="username">아이디</label>
+		<input type="text"  name="username" id="username" value="" placeholder="Username"  />
+	</div>
+
+		<div data-role="fieldcontain">
+		<label for="password">비밀번호:</label>
+		<input type="password" name="password" id="password" value=""  placeholder="비밀번호" />
+		</div>
+</form>
+	<center class="buttom_area">
+		<a href="index.html" data-role="button"  data-theme="b" >확인</a>
+	</center>
+
+</div>
+
+<p class="t_2"><span>비밀번호찾기</span></p>	
+<form action="" method="post"  class="form_login">
+	<div data-role="fieldcontain">
+		<label  for="username">아이디</label>
+		<input type="text"  name="username" id="username" value="" placeholder="Username"  />
+	</div>
+
+		<div data-role="fieldcontain">
+		<label for="password">비밀번호:</label>
+		<input type="password" name="password" id="password" value=""  placeholder="비밀번호"  >
+		</div>
+
+		<div data-role="fieldcontain" >
+		<label for="tel" >전화번호:</label>
+		<input type="tel" name="tel" id="tel" value="" >
+		</div>
+</form>
+	<center class="buttom_area">
+		<a href="index.html" data-role="button"  data-theme="b" >확인</a>
+	</center>
+</div>
+
+	<!-- /content -->
+<script type="text/javascript">
+<!--
+	$( "#popupPanel" ).on({
+    popupbeforeposition: function() {
+        var h = $( window ).height();
+
+        $( "#popupPanel" ).css( "height", h );
+    }
+});
+//-->
+</script>
+		<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+			<a href="school_01.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">스쿨보안관소개</a>
+			<a href="school_04.html"data-role="button" data-iconpos="top" data-icon="arrow-l">이용안내</a>
+			<a href="school_06.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">앱사용가이드</a>
+			<a href="school_08.html"data-role="button"  data-iconpos="top" data-icon="arrow-l">서비스결제</a>
+			<a href="school_10.html"data-role="button" data-iconpos="top" data-icon="arrow-l" >마이페이지</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Close</a>
+		</div>
+
+
+
+
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta charset="UTF-8">
+<title></title>
+<script src="js/jquery-latest.js" type="text/javascript"></script>
+<script src="js/jquery.certDialog.js" type="text/javascript"></script>
+<link type='text/css' href='css/common.css' rel='stylesheet' media='screen' />
+</head>
+<body>
+	<!-- <div style="text-align:center;padding:50px 0"><button class="btn_blue" id="btn_cert_login">인증서 관리</button></div> -->
+
+		<!-- modal content -->
+		<div id="certDialog" class="certDialog" style="width: 450px;display: block;">
+			<div style="width: 450px;display: block;">
+				<div title="인증서 관리" id="" class="certDialogTitle2"><h3>인증서 관리</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+
+				<fieldset class="xwup-location-item">
+					<legend id="" class="xwup-legend">인증서 위치</legend>
+					<table cellpadding="0" cellspacing="0" class="xwup-cert-position" style="width: 400px;">
+						<caption>인증서 위치</caption>
+						<tbody>
+							<tr>
+								<td>
+									<button type="button" id="" title="하드디스크" class="xwup-rbg-normal" style="cursor: pointer;"><span class="xwup-ico-hdd"></span><span class="xwup-rbg-text">하드디스크</span></button>
+								</td>
+								<td>
+									<button type="button" id="" title="이동식디스크" class="xwup-rbg-normal" style="cursor: pointer;"><span class="xwup-ico-removable"></span><span class="xwup-rbg-text" style="letter-spacing: -2px !important;">이동식디스크</span></button>
+								</td>
+								<td>
+									<button type="button" id="" title="레이어 열림 보안토큰" class="xwup-rbg-normal" style="cursor: pointer;"><span class="xwup-icon-hw-pkcs"></span><span class="xwup-rbg-text">HW보안토큰</span></button>
+								</td>
+								<td>
+									<button type="button" id="" title="휴대폰" class="xwup-rbg-normal" style="cursor: pointer;"><span class="xwup-ico-mobile"></span><span class="xwup-rbg-text">휴대폰</span></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+				<form name="" id="" method="post" class="xwup-location-item2">   
+					<fieldset>                     
+						<legend class="none">인증서 용도</legend>
+						<label for="">인증서 용도</label>
+				                            <span class="select">
+							<select id="insCltpCd" name="insCltpCd" title="" style="width:330px;">
+								<option value="0" selected="selected">서명용</option>
+								<option value="1">암호화용(키관리용)</option>
+							</select>
+						</span>
+					</fieldset>
+				</form>
+				<div id="" title="인증서 목록" class="xwup-tableview" style="width: 408px;">
+					<table cellpadding="0" cellspacing="0" summary="구분, 사용자, 만료일, 발급자">
+						<caption>인증서 목록</caption>
+						<colgroup><col width="82px"><col width="154px"><col width="82px"><col width="82px"></colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="xwup-mcert">
+									<div class="wide-cert-table-resizearea">구분<div class="xwup-tableview-resizer"></div></div>
+								</th>
+								<th scope="col" class="xwup-mcert2">
+									<div class="wide-cert-table-resizearea">사용자<div class="xwup-tableview-resizer"></div></div>
+								</th>
+								<th scope="col" class="xwup-mcert3">
+									<div class="wide-cert-table-resizearea">만료일<div class="xwup-tableview-resizer"></div></div>
+								</th>
+								<th scope="col" class="xwup-mcert4">
+									<div class="wide-cert-table-resizearea">발급자<div class="xwup-tableview-resizer"></div></div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="xwup-tableview-selected-row">
+								<td>
+									<div class="xwup-tableview-cell txtCenter"><img src="img/cert0.png" alt="정상 인증서">은행개인</div>
+								</td>
+								<td>
+									<div class="xwup-tableview-cell">홍길동()0001234567891012</div></td><td><div class="xwup-tableview-cell" style="display: block; text-align: center;">2016-02-13</div>
+								</td>
+								<td><div class="xwup-tableview-cell txtCenter">금융결제원</div></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="xwup-tableview-cell txtCenter"><img src="img/cert0.png" alt="정상 인증서">은행개인</div>
+								</td>
+								<td>
+									<div class="xwup-tableview-cell">홍길동()0001234567891012</div></td><td><div class="xwup-tableview-cell" style="display: block; text-align: center;">2016-02-13</div>
+								</td>
+								<td><div class="xwup-tableview-cell txtCenter">금융결제원</div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<form name="" id="" method="post" class="xwup-location-item2 t_right paddT0 maT5Minus">   
+					<fieldset>                     
+						<legend class="none">인증서 기관</legend>
+						<label for="">인증서 기관</label>
+				                            <span class="select">
+							<select id="insCltpCd" name="insCltpCd" title="" style="width:150px;">
+								<option value="0" selected="selected">전체</option>
+							</select>
+						</span>
+					</fieldset>
+				</form>
+
+				<div class="xwup-content-box">
+					<button type="button" class="view w123" id="01" title="">인증서 복사</button>
+					<button type="button" class="view w123" id="02" title="">비밀번호 변경</button>
+					<button type="button" class="view w123" id="03" title="">인증서 삭제</button>
+					<button type="button" class="view w123" id="04" title="">가져오기/내보내기</button>
+					<button type="button" class="view w123" id="05" title="">인증서 보기/검증</button>
+					<button type="button" class="view w123" id="06" title="">제품정보</button>
+				</div>
+
+				<div class="xwup-buttons-layout">
+					<button class="btn_gray" id="" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		<div id="certDialog01" class="certDialog" style="width: 400px;">
+			01
+			
+		</div>
+		
+		<div id="certDialog02" class="certDialog" style="width: 400px;">
+			<div style="width: 400px; display:block;">
+				<div title="인증서 비밀번호 변경" id="" class="certDialogTitle"><h3>인증서 비밀번호 변경</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+				<p class="paddB10">비밀번호를 입력하십시오.</p>
+				<ul class="pwList">
+					<li>
+						<strong id="birthTit" class="tit_calc">현재 비밀번호</strong>
+						<div class="form_calc">
+							<input type="password" name="" id="" title="인증서 암호" class="xwup-pw-box tf_m">
+						</div>
+					</li>
+					<li>
+						<strong id="birthTit" class="tit_calc">새로운 비밀번호</strong>
+						<div class="form_calc">
+							<input type="password" name="" id="" title="인증서 암호" class="xwup-pw-box tf_m">
+						</div>
+					</li>
+					<li>
+						<strong id="birthTit" class="tit_calc">새로운 비밀번호 확인</strong>
+						<div class="form_calc">
+							<input type="password" name="" id="" title="인증서 암호" class="xwup-pw-box tf_m">
+						</div>
+					</li>
+				</ul>
+				<div class="xwup-content-box fontNormal">
+					<p>인증서 비밀번호 변경 시 주의 및 권고사항</p>
+					<ul>
+						<li>*영문자와 숫자의 조합시 10자리 이상</li>
+						<li>*영문자와 숫자, 특수문자의 조합시 8자리 이상</li>
+						<li>*영문자는 대/소문자 구분</li>
+						<li>*연속된 동일한 문자열 또는 숫자는 사용금지</li>
+					</ul>
+				</div>
+
+				<div class="xwup-buttons-layout">
+					<button class="btn_blue" id="" type="button">확인</button>
+					<button class="btn_gray" id="" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="certDialog03" class="certDialog" style="width: 400px;">
+			<div style="width: 400px; display:block;">
+				<div title="인증서 폐지 사유 선택" id="" class="certDialogTitle"><h3>인증서 폐지 사유 선택</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+				<p class="paddB10 t_center">폐지사유을 선택하시오.</p>
+				<div class="xwup-content-box maT0">
+					<div class="rdaioSet" style="margin:0 4px 0">
+						<ul>
+							<li><input type="radio" id="" name="" class="rdo"> <label for="">개인키 손상</label></li>
+							<li><input type="radio" id="" name="" class="rdo"> <label for="">소속이나 이름의 변경</label></li>
+							<li><input type="radio" id="" name="" class="rdo"> <label for="">인증서를 더이상 사용하지 않음</label></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="xwup-buttons-layout">
+					<button class="btn_blue" id="" type="button">확인</button>
+					<button class="btn_gray" id="" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="certDialog04" class="certDialog" style="width: 400px;">
+			<div style="width: 400px; display:block;">
+				<div title="인증서 가져오기/내보내기" id="" class="certDialogTitle"><h3>인증서 가져오기/내보내기</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+				<fieldset role="" class="xwup-location-item">
+					<legend id="" class="xwup-legend">인증서 형식 변환</legend>
+					<div class="rdaioSet">
+						<ul>
+							<li><input type="radio" id="" name=""  class="rdo"> <label for="">인증서 내보내기 - PKCS#12(.PFX)</label></li>
+							<li><input type="radio" id="" name="" checked="checked" class="rdo"> <label for="">인증서 가져오기 - (.der, key, Capubs)</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<div class="paddT10 paddB20">
+					<p class="paddB5">파일이름:</p>
+					<input type="text" name="" id="" title="" class="xwup-pw-box maR5" style="width:250px;">
+					<button class="btn_gray" id="" type="button">찾아보기</button>
+				</div>
+				<fieldset role="" class="xwup-location-item">
+					<legend id="" class="xwup-legend">변경할 인증서 종류</legend>
+					<div class="rdaioSet t_center clfix">
+						<ul>
+							<li class="maR10"><input type="radio" id="" name=""  class="rdo"> <label for="">서명용</label></li>
+							<li><input type="radio" id="" name="" checked="checked" class="rdo"> <label for="">키관리용</label></li>
+						</ul>
+					</div>
+				</fieldset>
+
+				<div class="xwup-buttons-layout">
+					<button class="btn_blue" id="" type="button">확인</button>
+					<button class="btn_gray" id="" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="certDialog05" class="certDialog" style="width: 450px;">
+			<div style="width: 450px;display: block;">
+				<div title="인증서 보기" id="" class="certDialogTitle"><h3>인증서 보기</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+				<div class="xwup-tab-list"  id="container">
+					<ul class="tabs">
+						<li class="active"  rel="tab1"><a href="#">일반</a></li>
+						<li  class="tabnav-unselected"  rel="tab2"><a href="#">자세히</a></li>
+					</ul>
+				</div>
+				<div class="tab_container">
+				<div id="tab1" class="tab_content xwup-tab-view">
+					<div class="tabcontent-selected">
+						<div class="xwup_mbottom"><img src="img/verify1.png" alt="정상 인증서"><span class="xwup-fontb">인증서 정보</span></div>
+						<textarea cols="20" rows="7" class="xwup-textview" readonly="">이 인증서의 전자서명이 올바릅니다.
+
+[발급대상]
+홍길순()0004043504440667
+
+[발급자]
+yessignCA Class 1
+
+[구분]
+은행개인 - 홍길은행
+
+[유효기간]
+2015-02-10 00:00:00 ~ 2016-02-13 23:59:59
+
+[PC Time]
+2015-8-28 0:22:28
+
+</textarea>
+					</div>
+				</div>
+				<div  id="tab2" class="tab_content xwup-tab-view">
+					<div class="tabcontent-selected">
+						<div class="xwup-tableview" style="width: 373px;">
+							<table cellpadding="0" cellspacing="0">
+								<colgroup><col width="100"><col width="273"></colgroup>
+								<thead>
+									<tr>
+										<th class="filed-value">
+											<div class="wide-cert-table-resizearea">필드<div class="xwup-tableview-resizer"></div></div>
+										</th>
+										<th class="value-end">
+											<div class="wide-cert-table-resizearea">값<div class="xwup-tableview-resizer"></div></div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="brt-color-none">
+											<div class="xwup-tableview-cell"><img src="img/itemimg.png">버전</div>
+										</td>
+										<td class="brt-color-none xwup-wrd-normal"><div class="xwup-tableview-cell">3</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<textarea cols="20" rows="7" class="xwup-textview2" readonly="">2016-02-13 23:59:59</textarea>
+					</div>
+				</div>
+				</div>
+				<div class="xwup-buttons-layout4">
+					<button class="btn_gray" id="" type="button">취소</button>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="certDialog06" class="certDialog" style="width: 400px;">
+			<div style="width: 400px; display:block;">
+				<div title="제품정보" id="" class="certDialogTitle"><h3>제품정보</h3></div>
+				<a href="" class="certDialogClose"></a>
+			</div>
+			<div class="certDialogBody">
+				<div class="xwup-content-box">
+					KSignCASE-Web v3.2.0.1<br>Copyright 2015 KSIGN Co., Ltd. All rights reserved.
+				</div>
+
+				<div class="xwup-buttons-layout">
+					<button class="btn_blue" id="" type="button">확인</button>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#01').click(function(){
+					$('#certDialog01').certDialog();
+				});
+				$('#02').click(function(){
+					$('#certDialog02').certDialog();
+				});
+				$('#03').click(function(){
+					$('#certDialog03').certDialog();
+				});
+				$('#04').click(function(){
+					$('#certDialog04').certDialog();
+				});
+				$('#05').click(function(){
+					$('#certDialog05').certDialog();
+				});
+				$('#06').click(function(){
+					$('#certDialog06').certDialog();
+				});
+			});
+			$(function () {
+
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $("ul.tabs li").click(function () {
+        $("ul.tabs li").removeClass("active").css("color", "#333");
+        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+        $(this).addClass("active").css("color", "darkred");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+	</script>
+</body>
+</html>
